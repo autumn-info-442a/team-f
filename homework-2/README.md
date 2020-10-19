@@ -27,32 +27,32 @@ Popular meal cards: A maximum of 6 popular meals should be shown on the home pag
 __Popular meal cards:__ A maximum of 6 popular meals should be shown on the home page at once. If a user wants to see more meals, they can click the Popular Meals tab in the nav bar or a Show More button that will be designed at the bottom of the 6 meal previews to redirect to the Popular Meals page. Each meal card redirects to an external hyperlink showing the recipe.
 ### Create Plan Survey ###
 <br></br>
-![NameInfo](/img/2_name.png)
+![NameInfo](img/2_name.png)
 __Name__<br></br>
 After selecting the Create Plan button on the landing page, the user is directed into a new page in a slideshow card modal display. A user may enter their name in the input box. If no input is entered, the box is blank and the Continue button is disabled and they will not be able to proceed forward. The user can click on the left Back button at any time, and on this first slide the Back button will lead them back to the landing page. On the bottom is a progress bar that increases each time to press Continue to go to the next question, proportional to the amount of questions the survey has.
 ### Tell Us About Yourself ###
-![YourPersonalInfo](/img/3_personal_info.png)<br></br>
+![YourPersonalInfo](img/3_personal_info.png)<br></br>
 Height, age, and weight are all text entry inputs that require a number. If an alphabetical character is inputted in any of these, an error message pops up right above the Continue button that says “Enter a number for one of your inputs.” Physical activity level is a drop down with the options “Little to no activity,” “Moderate activity,” “High activity.” If one of the inputs are empty (excluding the input next to “in” for Height), then the Continue button is disabled. Pressing the back button will not store any of the correct information and then go back to the previous slide (Name).
 
 Height, age, and weight information will be stored into an equation that calculates the recommended calorie amount and food portion sizes provided to the user after completing the survey. Physical activity level will also be calculated with height, age, and weight into an equation that suggests the minutes of physical activity.
 ### Budget ###
-![YourBudget](/img/4_budget.png)<br></br>
+![YourBudget](img/4_budget.png)<br></br>
 User can input their maximum weekly budget by clicking and dragging on the slider scale. The slider placement should also show the number it is on below the slider square. The continue button does not have a disabled state and is active at all times--if the user does not move the slider the default will be at $0.
 
 If the user inputs $60 or less, it will signal on the back end to populate a list of pre-made resources for budgeting (such as a budget track sheet and/or relevant affordable food options), which is provided after the survey for curated nutrition tips/resources.
 ### Accessible Foods ###
-![AccessibleFoods](/img/5_accessible.png)<br></br>
+![AccessibleFoods](img/5_accessible.png)<br></br>
 The user may input one option using the radio buttons. If no options are selected/it is empty, the continue button is disabled. If a user selects “extremely inaccessible” or “inaccessible,” then it will signal on the backend to draw from the list of recipes that are labeled as “accessible”--meaning that the ingredients use/are able to be substituted for alternatives like canned vegetables or other staple foods. (The meals and recipes will be stored in a database with tags that label its contents such as accessibility).
 ### Cuisine ###
 ![CuisineImg](/img/6_cuisine.png)<br></br>
 A user can select as many options as they want for their cuisine choices. The empty state starts with 0 selected (outlined and no fill pill). The Continue button is active at all times--if a user continues without selecting any, the meal and nutrition options will be randomly selected for them in the plan in the results page. If a user selects 1 or more options, all meals tagged under the selected categories (e.g. Southern cuisine) will be shown to them under the recommended meals in the results page.
 ### Goal-Setting ###
-![Goals](/img/7_goal.png)<br></br>
+![Goals](img/7_goal.png)<br></br>
 The user may input one option using the radio buttons. This is the last question, and when the user reaches the last question slide the button is labeled as Submit. If no options are selected/it is empty, the Submit button is disabled.
 
 If they select “Extremely prefer goal setting with others” or “Prefer goal setting with others,” it will signal to get the list of tips and/or resources that are tagged with “group goal-setting advice.”  For example, the results page will provide a resource that allows you to set a smart goal that keeps you accountable with a friend. If they select “Prefer goal setting with myself” or “Extremely prefer goal setting with myself,” it will pull from the tips/resources tagged on personal goal-setting advice” that will show on the results page. Selecting “neutral” will randomize the resources and tips with either group and personal topics.
 ### Loading Results ###
-![LoadingResults](/img/8_loading.png)<br></br>
+![LoadingResults](img/8_loading.png)<br></br>
 After submission, a loading screen will appear with an animated loading graphic for approximately 3 seconds. The user will not be able to input anything on this slide except for the back button, where they can re-enter any previously saved information before submitting again. This should pull up on the personalized resources and meals that were tagged based on the relevant responses submitted before, in addition to finalizing the calculations from the user’s personal information.
 ### Results ###
 ![Results](img/9_results.png)<br></br>
@@ -66,10 +66,10 @@ __What others with similar results are doing:__ These are list items or quotes f
 
 __Suggested meals:__ Suggested meals list a range from 3 - 6 cards curated from their preferences picked in the Cuisine question. If they selected that their food and vegetables were not accessible, the recipes that are tagged as “accessible” should only appear here as well. At the bottom of the card gallery should be a “Show All Meals” button that redirects them to the “Popular meals” page. All cards should be linked to external hyperlinks verified by our project team.
 ### Popular Meals ###
-![MealChoices](/img/10_meals.png)<br></br>
+![MealChoices](img/10_meals.png)<br></br>
 Popular meals can be accessed from the Nav Bar, or in any of the buttons on pages that say to Show All Meals. When the user visits this page, the Popular Meals tab should be highlighted to distinguish its location. All meals are organized into cards that hyperlink to external sites. These should be categorized into sections of each cultural cuisine in alphabetical order.
 
 Wording on each card should list the recipe name as the title, and a 1 sentence description underneath. All cards should be equal height--so any long names or descriptions are clipped.
 ### About Us ###
-![AboutUs](/img/11_about.png)<br></br>
+![AboutUs](img/11_about.png)<br></br>
 About Us page is accessed by clicking About on the Nav Bar, and the tab is highlighted when the page is visited. This is primarily a read-only page with text blurbs of creators and profile photos.
