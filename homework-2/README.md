@@ -6,10 +6,23 @@ While there are existing solutions to address accurate nutrition information and
 
 # Solution Statement
 
-We believe in creating a solution that meets the stakeholder where they are at in their health journey. As such we have created a figma webpage that displays what our solution design could possibly look like. The goal of our product is not only to inform the individual(s) but also give them the tools to succeed not just for today, but tomorrow and beyond, leading to lasting nutritional change for a more robust and healthy lifestyle.
+
+## Overview of Fresh Take ##
+Our solution supports teenagers and young adults in minority communities who may have limited experience in building nutritious habits and lifestyles, but would like to learn more. This is implemented in a form of a personalized plan where a user submits their information in an engaging survey, which is then calculated to provide nutritional recommendations, curated nutrition tips, and culturally relevant meals. The web application interface is as follows:
+
+Figma Link: <br></br> [Fresh Take](https://www.figma.com/file/0rxNfC7CmNp9xTu8dCy3Q0/INFO-442-Design?node-id=12380%3A0)
 <br></br>
-The first step is to collect some information, notably, we announce we are only using this for their purposes of using the app, and nothing more. We take their height and weight and name.
-![Sign-Up](fig1.jpg)
+
+### Landing Page ###
+![LandingPage](/img/1_home.png)
+
+### Navigation Bar ###
+The nav bar is shown on every screen of the interface. The Fresh Take logo is contained in its own box, hyperlinked to this landing page URL. For the About and Project Menu tabs, each tab container should be highlighted when hovering over it.
+
+Create Plan banner card: Card should be responsive to size changes, but should still have the photo/text (“Personalize your nutrition…” above the Create Plan button at all times. Only the Create Plan button should be clickable, and it will lead you to the first page of the survey.
+
+Info/quote/testimonial cards: On desktop port these cards should be aligned horizontally, but when reducing the viewport on a smaller device the cards may be stacked vertically. Photos should be included on the top part of the card, but if there is no photo the card will default to a preselected blank placeholder. It should be view-only and not clickable.
+Popular meal cards: A maximum of 6 popular meals should be shown on the home page at once. If a user wants to see more meals, they can click the Popular Meals tab in the nav bar or a Show More button that will be designed at the bottom of the 6 meal previews to redirect to the Popular Meals page. Each meal card redirects to an external hyperlink showing the recipe.
 <br></br>
 Some more personal information just so we can assist them better.
 ![Height&Weight](fig2.jpg)
