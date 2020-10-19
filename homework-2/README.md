@@ -14,7 +14,7 @@ Figma Link: <br></br> [Fresh Take](https://www.figma.com/file/0rxNfC7CmNp9xTu8dC
 <br></br>
 
 ### Landing Page ###
-![LandingPage](/img/1_home.png)
+![LandingPage](img/1_home.png)
 
  __Navigation Bar:__
 The nav bar is shown on every screen of the interface. The Fresh Take logo is contained in its own box, hyperlinked to this landing page URL. For the About and Project Menu tabs, each tab container should be highlighted when hovering over it.
