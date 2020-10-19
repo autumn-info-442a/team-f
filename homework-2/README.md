@@ -44,7 +44,7 @@ If the user inputs $60 or less, it will signal on the back end to populate a lis
 ![AccessibleFoods](img/5_accessible.png)<br></br>
 The user may input one option using the radio buttons. If no options are selected/it is empty, the continue button is disabled. If a user selects “extremely inaccessible” or “inaccessible,” then it will signal on the backend to draw from the list of recipes that are labeled as “accessible”--meaning that the ingredients use/are able to be substituted for alternatives like canned vegetables or other staple foods. (The meals and recipes will be stored in a database with tags that label its contents such as accessibility).
 ### Cuisine ###
-![CuisineImg](/img/6_cuisine.png)<br></br>
+![CuisineImg](img/6_cuisine.png)<br></br>
 A user can select as many options as they want for their cuisine choices. The empty state starts with 0 selected (outlined and no fill pill). The Continue button is active at all times--if a user continues without selecting any, the meal and nutrition options will be randomly selected for them in the plan in the results page. If a user selects 1 or more options, all meals tagged under the selected categories (e.g. Southern cuisine) will be shown to them under the recommended meals in the results page.
 ### Goal-Setting ###
 ![Goals](img/7_goal.png)<br></br>
