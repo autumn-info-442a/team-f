@@ -24,7 +24,7 @@ __Create Plan banner card:__ Card should be responsive to size changes, but shou
 __Info/quote/testimonial cards:__ On desktop port these cards should be aligned horizontally, but when reducing the viewport on a smaller device the cards may be stacked vertically. Photos should be included on the top part of the card, but if there is no photo the card will default to a preselected blank placeholder. It should be view-only and not clickable.
 Popular meal cards: A maximum of 6 popular meals should be shown on the home page at once. If a user wants to see more meals, they can click the Popular Meals tab in the nav bar or a Show More button that will be designed at the bottom of the 6 meal previews to redirect to the Popular Meals page. Each meal card redirects to an external hyperlink showing the recipe.
 <br></br>
-__Popular meal cards:__ A maximum of 6 popular meals should be shown on the home page at once. If a user wants to see more meals, they can click the Popular Meals tab in the nav bar or a Show More button that will be designed at the bottom of the 6 meal previews to redirect to the Popular Meals page. Each meal card redirects to an external hyperlink showing the recipe.
+__Popular meal cards:__ A maximum of 6 popular meals should be shown on the home page at once. Each meal card redirects to an external hyperlink showing the recipe.
 <br></br>
 ## Create Plan Survey ##
 ### Name ###
@@ -42,7 +42,7 @@ User can input their maximum weekly budget by clicking and dragging on the slide
 If the user inputs $60 or less, it will signal on the back end to populate a list of pre-made resources for budgeting (such as a budget track sheet and/or relevant affordable food options), which is provided after the survey for curated nutrition tips/resources.
 ### Accessible Foods ###
 ![AccessibleFoods](img/5_fresh_food.png)<br></br>
-The user may input one option using the radio buttons. If no options are selected/it is empty, the continue button is disabled. If a user selects “extremely inaccessible” or “inaccessible,” then it will signal on the backend to draw from the list of recipes that are labeled as “accessible”--meaning that the ingredients use/are able to be substituted for alternatives like canned vegetables or other staple foods. (The meals and recipes will be stored in a database with tags that label its contents such as accessibility).
+The user may input one option using the radio buttons. If no options are selected/it is empty, the continue button is disabled. If a user selects "not often" or "never,” then it will signal on the backend to draw from the list of recipes that are labeled as “accessible”--meaning that the ingredients use/are able to be substituted for alternatives like canned vegetables or other staple foods. (The meals and recipes will be stored in a database with tags that label its contents such as accessibility).
 ### Cuisine ###
 ![CuisineImg](img/6_cuisine.png)<br></br>
 A user can select as many options as they want for their cuisine choices. The empty state starts with 0 selected (outlined and no fill pill). The Continue button is active at all times--if a user continues without selecting any, the meal and nutrition options will be randomly selected for them in the plan in the results page. If a user selects 1 or more options, all meals tagged under the selected categories (e.g. Southern cuisine) will be shown to them under the recommended meals in the results page.
@@ -50,7 +50,7 @@ A user can select as many options as they want for their cuisine choices. The em
 ![Goals](img/7_nutrition.png)<br></br>
 The user may input one option using the radio buttons. This is the last question, and when the user reaches the last question slide the button is labeled as Submit. If no options are selected/it is empty, the Submit button is disabled.
 
-If they select “Extremely prefer goal setting with others” or “Prefer goal setting with others,” it will signal to get the list of tips and/or resources that are tagged with “group goal-setting advice.”  For example, the results page will provide a resource that allows you to set a smart goal that keeps you accountable with a friend. If they select “Prefer goal setting with myself” or “Extremely prefer goal setting with myself,” it will pull from the tips/resources tagged on personal goal-setting advice” that will show on the results page. Selecting “neutral” will randomize the resources and tips with either group and personal topics.
+Depending on the user's answer choice, it will signal the relevant tagged dataset, such as "lose_fat," "healthy, "gain_weight," or "general." For example, if a user selects to be healthier, the resources pulled will be about health habits + tips in the "Curated nutrition tips for you" section of the Results page. Selecting "nothing specific" will randomize all the resources and provide overarching resources.
 
 ### Results ###
 ![Results](img/8_results.png)<br></br>
@@ -60,9 +60,7 @@ __Recommendations:__ All calories, serving sizes of fruits and vegetables, cups 
 
 __Curated nutrition tips for you:__ Advice and resources personalized to the user are provided here, which the team will curate from online existing nutrition publications/sources/articals. This includes information submitting on goal setting preferences in addition to the budget question. For example, if the user qualifies for the budget number cutoff, there will be resources linked around the topic, in addition to tagged advice tips surrounding budgeting with food. The resource cards below the pre-written advice tips hyperlink to external sources, or are attachments that they can read and use.
 
-__What others with similar results are doing:__ These are list items or quotes from other users on tips and habits they are currently doing to improve their nutrition habits. These are based on the responses on the goal setting and accessible food questions. A list of quotes tagged on “group goal,” “personal goal,” or “accessible” is pulled based on these answers and will provide relevant wording towards the user’s needs.
-
-__Suggested meals:__ Suggested meals list a range from 3 - 6 cards curated from their preferences picked in the Cuisine question. If they selected that their food and vegetables were not accessible, the recipes that are tagged as “accessible” should only appear here as well. At the bottom of the card gallery should be a “Show All Meals” button that redirects them to the “Popular meals” page. All cards should be linked to external hyperlinks verified by our project team.
+__Suggested meals:__ Suggested meals list a range from 3 - 6 cards curated from their preferences picked in the Cuisine question. If they selected that their food and vegetables were not accessible, the recipes that are tagged as “accessible” should only appear here as well. All cards should be linked to external hyperlinks verified by our project team.
 
 ### About Us ###
 ![AboutUs](img/9_about.png)<br></br>
