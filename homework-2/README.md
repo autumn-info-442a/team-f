@@ -41,7 +41,7 @@ User can input their maximum weekly budget by clicking and dragging on the slide
 
 If the user inputs $60 or less, it will signal on the back end to populate a list of pre-made resources for budgeting (such as a budget track sheet and/or relevant affordable food options), which is provided after the survey for curated nutrition tips/resources.
 ### Accessible Foods ###
-![AccessibleFoods](img/5_accessible.png)<br></br>
+![AccessibleFoods](img/5_fresh_food.png)<br></br>
 The user may input one option using the radio buttons. If no options are selected/it is empty, the continue button is disabled. If a user selects “extremely inaccessible” or “inaccessible,” then it will signal on the backend to draw from the list of recipes that are labeled as “accessible”--meaning that the ingredients use/are able to be substituted for alternatives like canned vegetables or other staple foods. (The meals and recipes will be stored in a database with tags that label its contents such as accessibility).
 ### Cuisine ###
 ![CuisineImg](img/6_cuisine.png)<br></br>
