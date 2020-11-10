@@ -16,17 +16,17 @@ Figma Link: <br></br> [Fresh Take](https://www.figma.com/file/0rxNfC7CmNp9xTu8dC
 ### Landing Page ###
 ![LandingPage](img/1_home.png)
 
- __Navigation Bar:__
-The nav bar is shown on every screen of the interface. The Fresh Take logo is contained in its own box, hyperlinked to this landing page URL. For the About and Project Menu tabs, each tab container should be highlighted when hovering over it.
+ __Fresh Take Logo:__
+The logo is shown on every screen of the interface, and the logo is contained in its own box, hyperlinked to this landing page URL. 
 
 __Create Plan banner card:__ Card should be responsive to size changes, but should still have the photo/text (“Personalize your nutrition…” above the Create Plan button at all times. Only the Create Plan button should be clickable, and it will lead you to the first page of the survey.
 
 __Info/quote/testimonial cards:__ On desktop port these cards should be aligned horizontally, but when reducing the viewport on a smaller device the cards may be stacked vertically. Photos should be included on the top part of the card, but if there is no photo the card will default to a preselected blank placeholder. It should be view-only and not clickable.
 Popular meal cards: A maximum of 6 popular meals should be shown on the home page at once. If a user wants to see more meals, they can click the Popular Meals tab in the nav bar or a Show More button that will be designed at the bottom of the 6 meal previews to redirect to the Popular Meals page. Each meal card redirects to an external hyperlink showing the recipe.
-<br></br>
+
 __Popular meal cards:__ A maximum of 6 popular meals should be shown on the home page at once. Each meal card redirects to an external hyperlink showing the recipe.
-<br></br>
-__About Us:__ The About Us section displays text blurbs of creators and profile photos. Image and text should be displayed horizontally side-by-side if the viewport is wider such as on a desktop view, and should be act responsively on narrower mobile views with a stacked image on top and text blurb below.
+
+__About us:__ The About Us section displays text blurbs of creators and profile photos. Image and text should be displayed horizontally side-by-side if the viewport is wider such as on a desktop view, and should be act responsively on narrower mobile views with a stacked image on top and text blurb below.
 
 <br></br>
 ## Create Plan Survey ##
