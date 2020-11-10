@@ -89,8 +89,7 @@ Justification for timeline: Separating the work and chunking it into easily dige
 ### 5. Requirement Verification
 
 During each build, we will run tests to double check and verify its accuracy--most of it will be manual inspections and some automated testing depending on its function as mentioned in the requirement verification points listed below. The developer will be responsible for conducting the inspections.
-
-
+<br></br>
 ### Navigation Bar (on each page): ###
 **NB-1: Navigation bar should be shown on every screen of the interface**
 - Manual testing: User can see the navigation bar on home screen and other screens at all times, no matter which browser is used.
@@ -107,7 +106,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 **NB-4: Fresh Take logo must link to the landing page in nav bar**
 - Manual inspection: Verify by seeing if there is a source link written in the code of the Fresh Take logo image. On all pages, the user should be able to click the logo and see the landing page.
 - Justification: Manually inspecting the code with the necessary link will be effective and efficient to see if it is the proper source as it will be reviewed across all pages.
-
+<br></br>
 ### Landing Page: ###
 **L-1: “Create Plan” banner card should always be visible independent of device size**
 - Manual testing: Use different devices with different screen resolutions to check visual accuracy.
@@ -124,12 +123,12 @@ During each build, we will run tests to double check and verify its accuracy--mo
 **L-4: There should be a max 3 testimonial cards aligned per horizontal row for desktop views, and stacked vertically on top of each other on smaller viewports**
 - Manual testing: Verify visually with desktop inspection and mobile inspection
 - Justification: Code may display correctly that the views are correct, but without user inspection it may not be the case.
-
+<br></br>
 ### Create Plan Survey Questions: ###
 **S-1: “Back” button that appears throughout the survey must allow users to go back to the previous page. Pressing back does not save current page data.**
 - Manual testing: The user should be able to view and click the back button on the survey page and see the previous question as expected.
 - Justification: To ensure that the flow of the survey is accurate on both ways, manually testing each page to see if it returns to the previous page before it can provide visual feedback if it works or not.
-
+<br></br>
 ### Name Page: ###
 **N-1: “Continue” button is disabled until at least 1 character is inputted**
 - Manual testing: If the text input is blank, user should see that the “Continue” button is visually lighter in opacity and is unable to click on the button. When 1+ characters are inputted, Continue button shows full opacity and the user can interact by clicking the button.
@@ -138,7 +137,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 **N-2: “Continue” button must go to the “Tell Us About Yourself” page.**
 - Manual inspection: href link in Continue link upon code inspection redirects to Tell Us About Yourself page.
 - Justification: Links need to be reliable to gain trust of the user/stakeholder. Ensuring that the link is correctly hyperlinked is important and is best suited with human inspection.
-
+<br></br>
 ### Tell Us About Yourself: ###
 **T-1: “Height”, “age”, and “weight” input must only accept number input**
 - Program analysis: Webpage should not advance if string or float entered by implementing a rule that it is only number values only. This can be checked by running a script of the input and printing an error message if values are not allowed.
@@ -151,8 +150,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 **T-3: “Continue” button is disabled if height (for ft), age, weight, and physical activity level are empty**
 - Manual testing: Button will be displayed with light opacity and cannot be interacted with/clicked on all tested devices.
 - Justification: Manual testing again helps prevent the user/stakeholder from breaking the application by accessing future portions without entering required information.
-
-
+<br></br>
 ### Budget: ###
 **B-1: Slider must be dragged in increments of whole dollar numerical amounts**
 - Manual testing: When a user drags the slider button, an associated number marking the current slider location should be displayed near the slider button. The closest number to slide up or down is the next whole number, and should not display decimals or skip numbers.
@@ -169,12 +167,12 @@ During each build, we will run tests to double check and verify its accuracy--mo
 **B-4: Default number of slider is $0**
 - Manual testing: Every time a user lands on this page initially or refreshes the page, the slider button must visibly sit at the $0 mark.
 - Justification: To prevent the application from breaking by having imaginary values or values that are out of bounds. Requires human intervention to check.
-
-### Accessible Foods:###
+<br></br>
+### Accessible Foods: ###
 **AF-1: If no options are selected, the continue button is disabled**
 - Manual testing: Button will be displayed with light opacity and cannot be interacted with/clicked on all tested devices.
 - Justification: This is a visual and UI component that must show on the page when a button is disabled through a different visual treatment, and can be tested to see if clicking the button goes anywhere or not.
-
+<br></br>
 ### Cuisine: ###
 **C-1: Answer choices must allow user to select multiple food options**
 - Manual testing: User should be able to select any food option, in any possible combination, by clicking any option pills and seeing the selected pills highlighted.
@@ -195,7 +193,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 **C-5: Empty state starts with 0 selected pills**
 - Manual inspection: Code inspection reveals that the empty state has blank fields ready for entry.
 - Justification: Because pills can be highlighted or un-highlighted for selection at any time, checking the code to see that it begins off with zero selected fields or saved data will verify what is expected.
-
+<br></br>
 ### Goal Setting: ###
 **G-1: “Submit” button is disabled until 1 choice has been selected**
 - Manual testing: If no choices are selected, user should see that the “Submit” button is visually lighter in opacity and is unable to click on the button. When 1 radio button option is selected, Submit button shows full opacity and the user can interact by clicking the button.
@@ -204,7 +202,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 **G-2: Clicking “Submit” must go to the “Results” page**
 - Manual inspection: href link for Submit button when inspecting the code should have a link to Results page.
 - Justification: This is for integrity of the application and users must trust that the link is reliable. This calls for human inspection to verify that it is documented in the code.
-
+<br></br>
 ### Results: ###
 **R-1: Nutrition resources and suggested meal cards must display images hyperlinked to articles**
 - Manual inspection: href link in the nutrition and suggested meal cards should have a link to an article page, and there must also be an img file coded into each card.
