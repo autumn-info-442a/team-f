@@ -11,25 +11,26 @@ ____
 
 ### 1. Work Coordination
 - Who coordinates the work:
- - The project manager will coordinate the work between team members.
- - Justification: Project managers can oversee the team progress and can allocate tasks that best suit each member’s skills.
+  - The project manager will coordinate the work between team members.
+  - Justification: Project managers can oversee the team progress and can allocate tasks that best suit each member’s skills.
 - Project management practices:
- - The Lean Methodology. This will focus on the flow, symmetry and balance to tackle needs of the group to develop as close to a perfect product for the consumer as possible.
- - Justification: Unlike the Agile method, the rationale behind using Lean over it is that a more symmetrical team can lead to a more symmetrical product. Taking care of the team and its needs and being willing to work together and communicate together helps lead to that conclusion.
+  - The Lean Methodology. This will focus on the flow, symmetry and balance to tackle needs of the group to develop as close to a perfect product for the consumer as possible.
+- Justification: Unlike the Agile method, the rationale behind using Lean over it is that a more symmetrical team can lead to a more symmetrical product. Taking care of the team and its needs and being willing to work together and communicate together helps lead to that conclusion.
 - Meeting frequency & agenda planning:
- - We meet every time during class and an additional time during Saturday evenings. If needed, we will also plan another time during the end of the week or weekend to finish work. The project manager should plan the agenda before each meeting.
- - Justification: Working together is important, however there needs to be a balance between how often we may be meeting and allowing the team to work independently to accomplish tasks. Not all items need to be completed simultaneously together.
-
+  - We meet every time during class and an additional time during Saturday evenings. If needed, we will also plan another time during the end of the week or weekend to finish work. The project manager should plan the agenda before each meeting.
+- Justification: Working together is important, however there needs to be a balance between how often we may be meeting and allowing the team to work independently to accomplish tasks. Not all items need to be completed simultaneously together.
+<br></br>
 ### 2. Tools to Communicate
 - Facebook messenger is our choice of communication.
 - Justification: The reason we chose this over other messaging apps such as Microsoft Team or Slack is because we are normally on Facebook, so it would be the fastest way to reach us.
-
+<br></br>
 ### 3. Owning Architecture Components
 **Overview of work distribution:** <br></br>
 
 - With a small team such as ours, anything related to paperwork and submissions and final read through corrections as needed will be handled by the PM.
 - Detail on design or the look and feel of the product is handled by the designer.
 - Everything related to the inner workings of the product and how it functions and works on the website and to the user will be handled by the Developer.
+
 **Owning components:**
 - SurveyModel: Chris
 - InformationModel: Nicola
@@ -45,7 +46,7 @@ ____
   - CuisineView: Tiffany
   - NutritionView: Nicola
 - Justification: With a small team, we hope to each support the development process with an equal workload of owning components. While the developer is responsible for the overall development of the application, the designer and PM will also contribute to ease each person’s workload.
-
+<br></br>
 ### 4. Timeline
 **Due 11/16**
 - Have “Create Plan” button allowing user to go to another page
@@ -81,17 +82,16 @@ ____
 - Have all pages ready in working order for initial launch
 
 Justification for timeline: Separating the work and chunking it into easily digestible and attainable sections per week allows us to focus and achieve our goals in a more successful manner.
-
+<br></br>
 ### 5. Requirement Verification
 
 During each build, we will run tests to double check and verify its accuracy--most of it will be manual inspections and some automated testing depending on its function as mentioned in the requirement verification points listed below. The developer will be responsible for conducting the inspections.
 
 
-### Navigation Bar (on each page):###
+### Navigation Bar (on each page): ###
 **NB-1: Navigation bar should be shown on every screen of the interface**
 - Manual testing: User can see the navigation bar on home screen and other screens at all times, no matter which browser is used.
 - Justification: Visual and/or UI components are efficient to manually test because visual verification for this requirement is more apparent than checking in code.
-<br></br>
 
 **NB-2: There’s a way to navigate to the About page**
 - Manual testing: User should be able to see the About page on the navigation bar in all screens and browsers and click on it to land on the About page.
@@ -105,7 +105,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 - Manual inspection: Verify by seeing if there is a source link written in the code of the Fresh Take logo image. On all pages, the user should be able to click the logo and see the landing page.
 - Justification: Manually inspecting the code with the necessary link will be effective and efficient to see if it is the proper source as it will be reviewed across all pages.
 
-### Landing Page:###
+### Landing Page: ###
 **L-1: “Create Plan” banner card should always be visible independent of device size**
 - Manual testing: Use different devices with different screen resolutions to check visual accuracy.
 - Justification: Code will be the same regardless of device. Requires human intervention by visually checking the cards on devices.
@@ -122,12 +122,12 @@ During each build, we will run tests to double check and verify its accuracy--mo
 - Manual testing: Verify visually with desktop inspection and mobile inspection
 - Justification: Code may display correctly that the views are correct, but without user inspection it may not be the case.
 
-### Create Plan Survey Questions:###
-**S-2: “Back” button that appears throughout the survey must allow users to go back to the previous page. Pressing back does not save current page data.**
+### Create Plan Survey Questions: ###
+**S-1: “Back” button that appears throughout the survey must allow users to go back to the previous page. Pressing back does not save current page data.**
 - Manual testing: The user should be able to view and click the back button on the survey page and see the previous question as expected.
 - Justification: To ensure that the flow of the survey is accurate on both ways, manually testing each page to see if it returns to the previous page before it can provide visual feedback if it works or not.
 
-### Name Page:###
+### Name Page: ###
 **N-1: “Continue” button is disabled until at least 1 character is inputted**
 - Manual testing: If the text input is blank, user should see that the “Continue” button is visually lighter in opacity and is unable to click on the button. When 1+ characters are inputted, Continue button shows full opacity and the user can interact by clicking the button.
 - Justification: This is an important user feature to disable the user from breaking the program by not entering enough data. Requires human testing.
@@ -136,7 +136,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 - Manual inspection: href link in Continue link upon code inspection redirects to Tell Us About Yourself page.
 - Justification: Links need to be reliable to gain trust of the user/stakeholder. Ensuring that the link is correctly hyperlinked is important and is best suited with human inspection.
 
-### Tell Us About Yourself:###
+### Tell Us About Yourself: ###
 **T-1: “Height”, “age”, and “weight” input must only accept number input**
 - Program analysis: Webpage should not advance if string or float entered by implementing a rule that it is only number values only. This can be checked by running a script of the input and printing an error message if values are not allowed.
 - Justification: Because there are numerous cases of what input can be provided, it is important for the program itself to be automatically checking and prevent any non-numerical cases right away.
@@ -150,7 +150,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 - Justification: Manual testing again helps prevent the user/stakeholder from breaking the application by accessing future portions without entering required information.
 
 
-### Budget:###
+### Budget: ###
 **B-1: Slider must be dragged in increments of whole dollar numerical amounts**
 - Manual testing: When a user drags the slider button, an associated number marking the current slider location should be displayed near the slider button. The closest number to slide up or down is the next whole number, and should not display decimals or skip numbers.
 - Justification: To limit the amount of entries we load in the system it is easier to have whole dollar amounts and test that the slider interacts as intended.
@@ -167,7 +167,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
 - Manual testing: Every time a user lands on this page initially or refreshes the page, the slider button must visibly sit at the $0 mark.
 - Justification: To prevent the application from breaking by having imaginary values or values that are out of bounds. Requires human intervention to check.
 
-### Accessible Foods:###
+### Accessible Foods: ###
 **AF-1: If no options are selected, the continue button is disabled**
 - Manual testing: Button will be displayed with light opacity and cannot be interacted with/clicked on all tested devices.
 - Justification: This is a visual and UI component that must show on the page when a button is disabled through a different visual treatment, and can be tested to see if clicking the button goes anywhere or not.
