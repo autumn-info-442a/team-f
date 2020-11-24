@@ -1,0 +1,17 @@
+[
+  {
+    "name": "test",
+    "class": "picture food",
+    "img": "housing"
+  },
+  {
+    "name": "test2",
+    "class": "picture shelter",
+    "img": "housing"
+  },
+  {
+    "name": "test3",
+    "class": "picture health",
+    "img": "housing"
+  }
+]
