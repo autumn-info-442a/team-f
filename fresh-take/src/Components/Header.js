@@ -6,8 +6,7 @@ class Header extends Component {
     return (
       <header>
         <button type="button" className="headerButton">
-          {/* <img src={require("../img/home.png")} aria-hidden="true" alt="Logo" /> */}
-          <h1>Fresh Take</h1>
+          <img src={require("../img/logo.png")} aria-hidden="true" alt="Logo"/>
         </button>
       </header>
     );
