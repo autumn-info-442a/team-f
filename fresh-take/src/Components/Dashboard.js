@@ -47,9 +47,23 @@ class Dashboard extends Component {
             <div className="sectionTitle">
                 <h2>About Us</h2>
             </div>
-            <p className="intro">
-              content
-            </p>
+            <div style={{display:"inline-flex", margin:"0 34px 0"}}>
+             <img 
+                src={require("../img/personal_info_icon.png")}
+                alt="test"
+                aria-hidden="true"
+                width="10%"
+                height="10%'"
+              />
+              <p className="intro">
+                Thank you for coming to our page. This is just a test paragraph to see what
+                the paragraph would look like in the about section. Please disregard anything
+                you are reading at the moment as this is probably wasting your time. But you 
+                if you are continously reading this, I hope you are doing well and you must 
+                be very board to continue reading this :)
+              </p>
+ 
+            </div>
           </main>
           <Footer />
         </div>

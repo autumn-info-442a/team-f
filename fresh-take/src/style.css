@@ -64,7 +64,7 @@ nav > p {
   background-color: white;
   margin: 41px 34px 85px;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 1372px;
   height: 450px;
   left: 34px;
@@ -77,6 +77,7 @@ nav > p {
   background-color: #2a7975;
   width: 1372px;
   height: 339px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 .personalTitle {
