@@ -3,23 +3,43 @@ import "../style.css";
 import Footer from "./Footer";
 import CardList from "./CardList";
 import Header from "./Header";
-
+import CustomPlan from "./CustomPlan";
 
 class Dashboard extends Component {
   render() {
+
+    function homeButton() {
+      let custom = document.getElementById("custom");
+      let dashboard = document.getElementById("dashboard");
+      dashboard.style.display = "block";
+      custom.style.display = "none";
+    }
+
+    function customButton() {
+      let custom = document.getElementById("custom");
+      let dashboard = document.getElementById("dashboard");
+      dashboard.style.display = "none";
+      custom.style.display = "block";
+    }
+
     return (
       <div>
-        <div>
+        <div onClick={homeButton}>
           <Header />
         </div>
 
+        <div id="custom">
+          <CustomPlan />
+        </div>
+
+        <div id="dashboard">
         {/* Personalization section */}
         <div className="personalCard">
             <div className="personalTitleCard">
               <h3 className="personalTitle">Personalize your nutrition to fit your preferences.</h3>
             </div>
-            <div className="card-body">
-              <button className="personalButton" >
+            <div className="card-body" onClick={customButton}>
+              <button className="personalButton">
                 <h3 className="card-title" style={{color:"#4F4F4F"}}>Create Plan</h3>
               </button>
             </div>
@@ -56,16 +76,26 @@ class Dashboard extends Component {
                 height="10%'"
               />
               <p className="intro">
-                Thank you for coming to our page. This is just a test paragraph to see what
-                the paragraph would look like in the about section. Please disregard anything
-                you are reading at the moment as this is probably wasting your time. But you 
-                if you are continously reading this, I hope you are doing well and you must 
-                be very board to continue reading this :)
+                Fresh Take is a personalized nutrition plan that helps you live a 
+                more balanced and healthy lifestyle. Designed for people of all backgrounds, 
+                this is a perfect fit even if you’ve had limited experience in building a 
+                nutritious lifestyle, but are looking to get started on it. All you need to 
+                do is create your plan in a few minutes by answering questions about yourself, 
+                and we’ll curate recommendations for you including suggested nutritional servings, 
+                personalized nutritional advice, and culturally relevant meals based on your preferences.
+              <p>
+                For more information and questions, contact anyone on the team-
+                Chris Yee: cyee20@uw.edu
+                Nicola Kalderash: kderash0@uw.edu
+                Tiffany Wong: wongct@uw.edu
               </p>
+              </p>
+
  
             </div>
           </main>
           <Footer />
+        </div>
         </div>
       </div>
     );
