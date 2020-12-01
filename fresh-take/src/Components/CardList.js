@@ -14,7 +14,7 @@ class Card extends Component {
           className={"card-img-top"}
           alt={topic.name}
           aria-hidden="true"
-        />
+        />   
         <div className="card-body">
           <h3 className="card-title">{topic.name}</h3>
         </div>

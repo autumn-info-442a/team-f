@@ -1,25 +1,47 @@
 import React, { Component } from "react";
 import "../style.css";
-// import Footer from "./Footer";
-// import CardList from "./CardList";
-import Header from "./Header";
 
 
 class CustomPlan extends Component {
   render() {
+    function getSelectedCheckboxValues(name) {
+        const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+        let values = [];
+        checkboxes.forEach((checkbox) => {
+            values.push(checkbox.value);
+        });
+        return values;
+    }
+
+    let saveData = (event) => {
+        event.preventDefault();
+        let userInfo = [
+          document.getElementById("name").value,
+          document.getElementById("ft").value,
+          document.getElementById("in").value,
+          document.getElementById("lbs").value,
+          document.getElementById("gender").value,
+          document.getElementById("age").value,
+          document.getElementById("physical").value,
+          document.getElementById("money").value,
+          getSelectedCheckboxValues("nutr"),
+          getSelectedCheckboxValues("cuisine"),
+          getSelectedCheckboxValues("goal")
+        ];
+        console.log(userInfo)
+    };
+    
     return (
         <div>
-            <form >
-            {/* <Header /> */}
-            {/* Question1 */}
+            <form>
+                {/* Question1 */}
                 <div>
-                    {/* left side */}
                     <div>
                         <div style={{display:"flex"}}>
                             <div>
                                 <h1>Let's get started on your own plan.</h1>
-                                <p>What's your name?</p>
-                                <input type="text" id="name" name="name" className="nameInput"></input>
+                                <p className="col-lg-1"> What's your name? </p>
+                                <input id="name" className="nameInput" required></input>
                             </div>
                             <img 
                                 src={require("../img/name_icon.jpg")}
@@ -31,110 +53,122 @@ class CustomPlan extends Component {
                         </div>
                     </div>
                 </div>
-            {/* Question2 */}
+                {/* Question2 */}
                 <div>
                     {/* Height */}
-                    <label htmlFor="height" className="col-lg-1">
-                        Height
-                    </label>
+                    <p className="col-lg-1"> Height </p>
                     <input
-                        type="text"
+                        id="ft"
                         className="form-control"
+                        type="number"
                         required
                     ></input>
                     <input
-                        type="text"
+                        id="in"
                         className="form-control"
+                        type="number"
                         required
                     ></input>
                     {/* Weight */}
-                    <label htmlFor="weight" className="col-lg-1">
-                        Weight
-                    </label>
+                    <p className="col-lg-1"> Weight </p>
                     <input
-                        type="text"
+                        id="lbs"
                         className="form-control"
+                        type="number"
                         required
                     ></input>
                     {/* Gender */}
-                    <label htmlFor="gender" className="col-lg-1">
-                        Gender
-                    </label>
-                    <div>
-                        <select
-                        id="category"
+                    <p className="col-lg-1"> Gender </p>
+                    <select
+                        id="gender"
                         className="form-control"
-                        name="category"
+                        name="gender"
                         required
-                        >
+                    >
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Do not wish to answer">Do not wish to answer</option>
-                        </select>
-                    </div>
+                    </select>
                     {/* Age */}
-                    <label htmlFor="weight" className="col-lg-1">
-                        Age
-                    </label>
+                    <p className="col-lg-1"> Age </p>
                     <input
-                        type="text"
+                        id="age"
                         className="form-control"
-                        required
+                        type="number"
                     ></input>
                     {/* Physical Acitivity Level */}
-                    <label htmlFor="gender" className="col-lg-1">
-                        Physical Acitivity Level 
-                    </label>
-                    <div>
-                        <select
-                        id="category"
+                    <p className="col-lg-1"> Physical Acitivity Level </p>
+                    <select
+                        id="physical"
                         className="form-control"
-                        name="category"
+                        name="physical"
                         required
-                        >
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Do not wish to answer">Do not wish to answer</option>
-                        </select>
-                    </div>
+                    >
+                        <option value="Very">Very</option>
+                        <option value="Minimal">Minimal</option>
+                        <option value="Never">Never</option>
+                    </select>
                 </div>
                 {/* Question 3 */}
-                <label htmlFor="gender" className="col-lg-1">
-                        What is your estimated weekly budget?
-                </label>
-                <input type="range" min="0" max="100" value="50" className="slider" id="myRange"></input>
+                <div>
+                    <p className="col-lg-1"> What is your estimated weekly budget? </p>
+                    <input 
+                        id="money"
+                        className="slider"
+                        type="range"
+                        min="0"
+                        max="100"
+                    ></input>
+                    
+                </div>
                 {/* Question 4 */}
-                <p>I can easily buy fresh fruits and vegetables where I shop</p>
-                <input type="radio" id="age1" name="age" value="30" />
-                <label for="age1">Always</label>
-                <input type="radio" id="age2" name="age" value="60" />
-                <label for="age2">Often</label>
-                <input type="radio" id="age3" name="age" value="100" />
-                <label for="age3">Sometimes</label>
-                <input type="radio" id="age2" name="age" value="60" />
-                <label for="age2">Not Often</label>
-                <input type="radio" id="age3" name="age" value="100" />
-                <label for="age3">Never</label>
+                <div>
+                    <p className="col-lg-1">I can easily buy fresh fruits and vegetables where I shop</p>
+                    
+                    <label for="always">Always</label>
+                    <input id="always" type="radio" name="nutr" value="Always"/>
+                    
+                    <label for="often">Often</label>
+                    <input id="often" type="radio" name="nutr" value="Often"/>
+                    
+                    <label for="sometimes">Sometimes</label>
+                    <input id="sometimes" type="radio" name="nutr" value="Sometimes"/>
+                    
+                    <label for="not">Not Often</label>
+                    <input id="not" type="radio" name="nutr" value="Not Often"/>
+                    
+                    <label for="never">Never</label>
+                    <input id="never" type="radio" name="nutr" value="Never"/>
+                </div>
                 {/* Question 5 */}
-                <p>What type of cuisine do you eat on a regular basis?</p>
-                <input type="checkbox" name="favorite1" value="chocolate" /> Chocolate
-                <input type="checkbox" name="favorite2" value="vanilla" /> Vanilla
-                <input type="checkbox" name="favorite3" value="mint" /> Mint
+                <div>
+                    <p className="col-lg-1">What type of cuisine do you eat on a regular basis?</p>
+                    
+                    <input id="Asian" type="checkbox" name="cuisine" value="Asian"/> Asian
+                    <input id="American" type="checkbox" name="cuisine" value="American"/> American
+                    <input id="Mexican" type="checkbox" name="cuisine" value="Mexican"/> Mexican
+                </div>
                 {/* Question 6 */}
-                <p>What is your main nutrition goal?</p>
-                <input type="radio" id="age1" name="age" value="30" />
-                <label for="age1">Loss Fat</label>
-                <input type="radio" id="age2" name="age" value="60" />
-                <label for="age2">Be heathier</label>
-                <input type="radio" id="age3" name="age" value="100" />
-                <label for="age3">Gain Weight</label>
-                <input type="radio" id="age2" name="age" value="60" />
-                <label for="age2">Nothing specific</label>
-                <input type="submit" value="Submit" className="submitButton"></input>
+                <div>
+                    <p className="col-lg-1">What is your main nutrition goal?</p>
+                    
+                    <label for="lossFat">Loss Fat</label>
+                    <input id="lossFat" type="radio" name="goal" value="Loss Fat"/> 
+                   
+                    <label for="beHealthier">Be heathier</label>
+                    <input id="beHealthier" type="radio" name="goal" value="Be Heathier"/> 
+                    
+                    <label for="gainWeight">Gain Weight</label>
+                    <input id="gainWeight" type="radio" name="goal"  value="Gain Weight"/> 
+
+                    <label for="none">Nothing specific</label>
+                    <input id="none" type="radio" name="goal"  value="Nothing Specific"/> 
+                </div>
             </form>
+            <button id="subButton" className="submitButton" onClick={saveData}> Submit </button>
         </div>
     );
   }
 }
 
-export default CustomPlan
+export default CustomPlan;
