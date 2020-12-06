@@ -33,69 +33,84 @@ class Dashboard extends Component {
         </div>
 
         <div id="dashboard">
-        {/* Personalization section */}
-        <div className="personalCard">
+          {/* Personalization section */}
+          {/* <div className="personalCard">
             <div className="personalTitleCard">
               <h3 className="personalTitle">Personalize your nutrition to fit your preferences.</h3>
             </div>
             <div className="card-body" onClick={customButton}>
               <button className="personalButton">
-                <h3 className="card-title" style={{color:"#4F4F4F"}}>Create Plan</h3>
+                <h3 className="card-title" style={{ color: "#4F4F4F" }}>Create Plan</h3>
               </button>
             </div>
-        </div>
+          </div> */}
 
-        {/* others */}
-        <div style={{verticalAlign:"center"}}>
-          <main>
-            <div className="sectionTitle">
-              <h2>123,230 plans created so far by your peers</h2>
+            <div class="card mb-3 text-center">
+              <div class="card-header">
+                <h1>Personalize your nutrition to fit your preferences.</h1>
             </div>
-            <div>
-              <section>
-                <CardList />
-              </section>
+              <div class="card-body">
+                <button type="button" class="btn personalButton btn-lg" onClick={customButton}>Create Plan</button>
+              </div>
             </div>
-            <div className="sectionTitle">
-                <h2>Popular Meals</h2>
-            </div>
-            <div>
-              <section>
-                <CardList />
-              </section>
-           </div>
-            <div className="sectionTitle">
-                <h2>About Us</h2>
-            </div>
-            <div style={{display:"inline-flex", margin:"0 34px 0"}}>
-             <img 
-                src={require("../img/personal_info_icon.png")}
-                alt="test"
-                aria-hidden="true"
-                width="10%"
-                height="10%'"
-              />
-              <p className="intro">
-                Fresh Take is a personalized nutrition plan that helps you live a 
-                more balanced and healthy lifestyle. Designed for people of all backgrounds, 
-                this is a perfect fit even if you’ve had limited experience in building a 
-                nutritious lifestyle, but are looking to get started on it. All you need to 
-                do is create your plan in a few minutes by answering questions about yourself, 
-                and we’ll curate recommendations for you including suggested nutritional servings, 
-                personalized nutritional advice, and culturally relevant meals based on your preferences.
+
+
+          {/* others */}
+          <div style={{ verticalAlign: "center" }}>
+            <main>
+              <div className="sectionTitle">
+                <h3>123,230 plans created so far by your peers</h3>
+              </div>
+              <div>
+                <section>
+                  <CardList />
+                </section>
+              </div>
+              <div className="sectionTitle">
+                <h3>Popular Meals</h3>
+              </div>
+              <div >
+                <section>
+                  <CardList />
+                </section>
+              </div>
+              <div className="sectionTitle">
+                <h3>About Us</h3>
+              </div>
+              <div id="about">
+                <img
+                  src={require("../img/personal_info_icon.png")}
+                  alt="test"
+                  aria-hidden="true"
+                  width="15%"
+                  height="15%'"
+                />
+                <p className="intro">
+                  Fresh Take is a personalized nutrition plan that helps you live a
+                  more balanced and healthy lifestyle. Designed for people of all backgrounds,
+                  this is a perfect fit even if you’ve had limited experience in building a
+                  nutritious lifestyle, but are looking to get started on it. All you need to
+                  do is create your plan in a few minutes by answering questions about yourself,
+                  and we’ll curate recommendations for you including suggested nutritional servings,
+                  personalized nutritional advice, and culturally relevant meals based on your preferences.
               <p>
-                For more information and questions, contact anyone on the team-
-                Chris Yee: cyee20@uw.edu
-                Nicola Kalderash: kderash0@uw.edu
-                Tiffany Wong: wongct@uw.edu
+                <br />
+                    For more information and questions, contact anyone on the team:
+                    <p>
+                    Chris Yee: cyee20@uw.edu
+                    <br />
+                    Nicola Kalderash: kderash0@uw.edu
+                    <br />
+                    Tiffany Wong: wongct@uw.edu
+                    </p>
               </p>
-              </p>
+                </p>
 
- 
-            </div>
-          </main>
-          <Footer />
-        </div>
+
+              </div>
+            </main>
+            <Footer />
+          </div>
         </div>
       </div>
     );

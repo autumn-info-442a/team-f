@@ -3,172 +3,285 @@ import "../style.css";
 
 
 class CustomPlan extends Component {
-  render() {
-    function getSelectedCheckboxValues(name) {
-        const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
-        let values = [];
-        checkboxes.forEach((checkbox) => {
-            values.push(checkbox.value);
-        });
-        return values;
-    }
+    render() {
+        function getSelectedCheckboxValues(name) {
+            const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+            let values = [];
+            checkboxes.forEach((checkbox) => {
+                values.push(checkbox.value);
+            });
+            return values;
+        }
 
-    let saveData = (event) => {
-        event.preventDefault();
-        let userInfo = [
-          document.getElementById("name").value,
-          document.getElementById("ft").value,
-          document.getElementById("in").value,
-          document.getElementById("lbs").value,
-          document.getElementById("gender").value,
-          document.getElementById("age").value,
-          document.getElementById("physical").value,
-          document.getElementById("money").value,
-          getSelectedCheckboxValues("nutr"),
-          getSelectedCheckboxValues("cuisine"),
-          getSelectedCheckboxValues("goal")
-        ];
-        console.log(userInfo)
-    };
-    
-    return (
-        <div>
+        let saveData = (event) => {
+            event.preventDefault();
+            let userInfo = [
+                document.getElementById("name").value,
+                document.getElementById("ft").value,
+                document.getElementById("in").value,
+                document.getElementById("lbs").value,
+                document.getElementById("gender").value,
+                document.getElementById("age").value,
+                document.getElementById("physical").value,
+                document.getElementById("money").value,
+                getSelectedCheckboxValues("nutr"),
+                getSelectedCheckboxValues("cuisine"),
+                getSelectedCheckboxValues("goal")
+            ];
+            console.log(userInfo)
+        };
+
+        return (
             <form>
-                {/* Question1 */}
-                <div>
-                    <div>
-                        <div style={{display:"flex"}}>
+                <div className="container">
+
+                    {/* Get Started */}
+                    <div className="container">
+                        <div className="row">
                             <div>
-                                <h1>Let's get started on your own plan.</h1>
-                                <p className="col-lg-1"> What's your name? </p>
-                                <input id="name" className="nameInput" required></input>
+                                <div className="col">
+                                    <h2 className="mt-5 mb-5">Let's get started on your own plan.</h2>
+                                </div>
                             </div>
-                            <img 
+                            <img
                                 src={require("../img/name_icon.jpg")}
                                 alt="test"
                                 aria-hidden="true"
-                                width="10%"
-                                height="10%'"
+                                width="7%"
+                                height="7%'"
+                                className="mt-4 ml-5"
                             />
                         </div>
-                    </div>
-                </div>
-                {/* Question2 */}
-                <div>
-                    {/* Height */}
-                    <p className="col-lg-1"> Height </p>
-                    <input
-                        id="ft"
-                        className="form-control"
-                        type="number"
-                        required
-                    ></input>
-                    <input
-                        id="in"
-                        className="form-control"
-                        type="number"
-                        required
-                    ></input>
-                    {/* Weight */}
-                    <p className="col-lg-1"> Weight </p>
-                    <input
-                        id="lbs"
-                        className="form-control"
-                        type="number"
-                        required
-                    ></input>
-                    {/* Gender */}
-                    <p className="col-lg-1"> Gender </p>
-                    <select
-                        id="gender"
-                        className="form-control"
-                        name="gender"
-                        required
-                    >
-                        <option value="Male">Male</option>
-                        <option value="Female">Female</option>
-                        <option value="Do not wish to answer">Do not wish to answer</option>
-                    </select>
-                    {/* Age */}
-                    <p className="col-lg-1"> Age </p>
-                    <input
-                        id="age"
-                        className="form-control"
-                        type="number"
-                    ></input>
-                    {/* Physical Acitivity Level */}
-                    <p className="col-lg-1"> Physical Acitivity Level </p>
-                    <select
-                        id="physical"
-                        className="form-control"
-                        name="physical"
-                        required
-                    >
-                        <option value="Very">Very</option>
-                        <option value="Minimal">Minimal</option>
-                        <option value="Never">Never</option>
-                    </select>
-                </div>
-                {/* Question 3 */}
-                <div>
-                    <p className="col-lg-1"> What is your estimated weekly budget? </p>
-                    <input 
-                        id="money"
-                        className="slider"
-                        type="range"
-                        min="0"
-                        max="100"
-                    ></input>
-                    
-                </div>
-                {/* Question 4 */}
-                <div>
-                    <p className="col-lg-1">I can easily buy fresh fruits and vegetables where I shop</p>
-                    
-                    <label for="always">Always</label>
-                    <input id="always" type="radio" name="nutr" value="Always"/>
-                    
-                    <label for="often">Often</label>
-                    <input id="often" type="radio" name="nutr" value="Often"/>
-                    
-                    <label for="sometimes">Sometimes</label>
-                    <input id="sometimes" type="radio" name="nutr" value="Sometimes"/>
-                    
-                    <label for="not">Not Often</label>
-                    <input id="not" type="radio" name="nutr" value="Not Often"/>
-                    
-                    <label for="never">Never</label>
-                    <input id="never" type="radio" name="nutr" value="Never"/>
-                </div>
-                {/* Question 5 */}
-                <div>
-                    <p className="col-lg-1">What type of cuisine do you eat on a regular basis?</p>
-                    
-                    <input id="Asian" type="checkbox" name="cuisine" value="Asian"/> Asian
-                    <input id="American" type="checkbox" name="cuisine" value="American"/> American
-                    <input id="Mexican" type="checkbox" name="cuisine" value="Mexican"/> Mexican
-                </div>
-                {/* Question 6 */}
-                <div>
-                    <p className="col-lg-1">What is your main nutrition goal?</p>
-                    
-                    <label for="lossFat">Loss Fat</label>
-                    <input id="lossFat" type="radio" name="goal" value="Loss Fat"/> 
-                   
-                    <label for="beHealthier">Be heathier</label>
-                    <input id="beHealthier" type="radio" name="goal" value="Be Heathier"/> 
-                    
-                    <label for="gainWeight">Gain Weight</label>
-                    <input id="gainWeight" type="radio" name="goal"  value="Gain Weight"/> 
 
-                    <label for="none">Nothing specific</label>
-                    <input id="none" type="radio" name="goal"  value="Nothing Specific"/> 
-                </div>
+                        {/* Name */}
+                        <div className="row mb-3">
+                            <div className="form-group col-md-5">
+                                <label htmlFor="inputName">Name</label>
+                                <input type="text" name="name" className="form-control" id="name"></input>
+                            </div>
+                        </div>
+
+                        {/* Height */}
+                        <div className="row mb-3">
+                            <div className="col">
+                                <label htmlFor="inputPhysical">Height</label>
+                                <div className="row">
+                                    <div className="form-group col-md-2">
+                                        <input
+                                            id="ft"
+                                            className="form-control"
+                                            type="number"
+                                            min="0"
+                                            placeholder="ft"
+                                            required
+                                        ></input>
+                                    </div>
+                                    <div className="form-group col-md-2">
+                                        <input
+                                            id="ft"
+                                            className="form-control"
+                                            type="number"
+                                            min="0"
+                                            placeholder="in"
+                                            required
+                                        ></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Weight */}
+                        <div className="row">
+                            <div className="col">
+                                <div className="row">
+                                    <div className="form-group col-md-2">
+                                        <label htmlFor="inputWeight">Weight</label>
+                                        <input
+                                            id="lbs"
+                                            className="form-control"
+                                            type="number"
+                                            min="0"
+                                            placeholder="lbs"
+                                            required
+                                        ></input>
+                                    </div>
+
+                                    {/* Age */}
+                                    <div className="form-group col-md-2">
+                                        <label htmlFor="inputAge">Age</label>
+                                        <input
+                                            id="age"
+                                            className="form-control"
+                                            type="number"
+                                            placeholder="years"
+                                        ></input>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Gender */}
+                        <div className="row mb-3">
+                            <div className="form-group col-md-5">
+                                <label htmlFor="inputGender">Gender</label>
+                                <select
+                                    id="gender"
+                                    className="form-control"
+                                    name="gender"
+                                    required
+                                >
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Do not wish to answer">Do not wish to answer</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        {/* Physical Activity Level */}
+                        <div className="row mb-3">
+                            <div className="form-group col-md-5">
+                                <label htmlFor="inputPhysical">Physical Activity Level</label>
+                                <select
+                                    id="physical"
+                                    className="form-control"
+                                    name="physical"
+                                    required
+                                >
+                                    <option value="Very">Little to no activity</option>
+                                    <option value="Minimal">Moderate activity</option>
+                                    <option value="Never">High activity</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        {/* Weekly Budget */}
+                        <div className="row mb-3">
+                            <div className="form-group col-md-9">
+                                <label htmlFor="inputPhysical">What is your estimated weekly budget?</label>
+                                <input
+                                    id="money"
+                                    className="slider"
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                ></input>
+                            </div>
+                        </div>
+
+                        {/* Fresh Fruits and Vegetables */}
+                        <div className="row mb-2">
+                            <div className="form-group col">
+                                <label htmlFor="inputPhysical">I can easily buy fresh fruits and vegetables where I shop.</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="always" type="radio" name="nutr" value="Always" />
+                                    <label class="form-check-label" for="always">Always</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="often" type="radio" name="nutr" value="Often" />
+                                    <label class="form-check-label" for="often">Often</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="sometimes" type="radio" name="nutr" value="Sometimes" />
+                                    <label class="form-check-label" for="sometimes">Sometimes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="not" type="radio" name="nutr" value="Not Often" />
+                                    <label class="form-check-label" for="not">Not Often</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="never" type="radio" name="nutr" value="Never" />
+                                    <label class="form-check-label" for="never">Never</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Cuisine */}
+                        <div className="row">
+                            <div className="form-group col-9">
+                                <label htmlFor="inputPhysical">What type of cuisine do you eat on a regular basis?</label>
+                                <div className="row">
+                                    <div className="form-group col">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="african" value="African" />
+                                            <label class="form-check-label" for="african">African cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="american" value="American" />
+                                            <label class="form-check-label" for="american">American cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="caribbean" value="Caribbean" />
+                                            <label class="form-check-label" for="caribbean">Caribbean cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="eastAsian" value="East/Southeast Asian" />
+                                            <label class="form-check-label" for="eastAsian">East/Southeast Asian cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="european" value="European" />
+                                            <label class="form-check-label" for="european">European cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="latinAmerican" value="Latin American" />
+                                            <label class="form-check-label" for="latinAmerican">Latin American cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="mediterranean" value="Mediterranean" />
+                                            <label class="form-check-label" for="mediterranean">Mediterranean cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="middleEastern" value="Middle Eastern" />
+                                            <label class="form-check-label" for="middleEastern">Middle Eastern cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="nativeAmerican" value="Native American" />
+                                            <label class="form-check-label" for="nativeAmerican">Native American cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="pacificIslander" value="Pacific Islander" />
+                                            <label class="form-check-label" for="pacificIslander">Pacific Islander cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="southAsian" value="South Asian" />
+                                            <label class="form-check-label" for="southAsian">South Asian cuisine</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="southern" value="Souther" />
+                                            <label class="form-check-label" for="southern">Southern cuisine</label>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Nutrition goal */}
+                            <div className="row mb-3">
+                                <div className="form-group col">
+                                    <label htmlFor="inputPhysical">What is your main nutrition goal?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="loseFat" type="radio" name="goal" value="Lose fat" />
+                                        <label class="form-check-label" for="loseFat">Lose fat</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="beHealthier" type="radio" name="goal" value="Be healthier" />
+                                        <label class="form-check-label" for="beHealthier">Be healthier</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="gainWeight" type="radio" name="goal" value="Gain weight" />
+                                        <label class="form-check-label" for="gainWeight">Gain weight</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="none" type="radio" name="goal" value="Nothing specific" />
+                                        <label class="form-check-label" for="none">Nothing specific</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="subButton" className="submitButton mb-5" onClick={saveData}> Submit </button>
+                    </div>
             </form>
-            <button id="subButton" className="submitButton" onClick={saveData}> Submit </button>
-        </div>
-    );
-  }
+        );
+    }
 }
 
 export default CustomPlan;

@@ -5,38 +5,50 @@ body {
   margin: 0;
 }
 
-.intro,
-.ending {
-  margin: 1rem;
+.intro{
+  margin-left: 3rem;
 }
 
 .ending {
   font-size: 8pt;
-  text-align: right;
+  text-align: center;
+  color: #8F8F8F;
+  margin: 0em 2em 2em 2em;
 }
 
 .sectionTitle {
-  width: 548px;
+  /* width: 548px;
   height: 105px;
-  display: flex;
+  display: flex; */
+  margin: 3rem 1rem;
   text-align: center;
-  /* border: 3px solid green; */
-  margin: auto;
 }
 
-h2 {
-  /* border: 3px solid green; */
-  line-height: 51px;
-  vertical-align: middle;
-  margin: auto;
-  font-weight: 300;
-  font-size: 50px;
-  left: 443px;
-  top: 683px;
+h1 {
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
+h2 {
+  font-weight: bold;
+  color: #2A7975;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin: 0rem 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+
 #custom {
   display: none;
 }
+
 /*******************HEADER*********************/
 button > img {
   height: 20%;
@@ -62,7 +74,13 @@ nav > p {
 }
 /**************PERSONAL CARDS*******************/
 
-.personalCard {
+.card-header {
+  background-color: #2a7975;
+  color: #ffffff;
+  padding: 1rem 1rem; 
+}
+
+/* .personalCard {
   flex: 0 0 250px;
   background-color: white;
   margin: 41px 34px 85px;
@@ -94,42 +112,40 @@ nav > p {
   display: flex;
   color: #ffffff;
   position: absolute;
-}
+} */
 
 .personalButton {
   background-color: #b2d8d1;
-  border-radius: 20px;
-  border: none;
-  width: 544px;
-  height: 70px;
-  left: 421px;
-  top: 513px;
+  width: 240px;
+  height: 50px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition-duration: 0.3s;
 }
 
-.personalButton:hover {
-  opacity: 50%;
+.personalButton:hover, .personalButton:focus {
+  background-color: #214B49;
+  color: white;
 }
+
 
 /**************Survey*******************/
 .submitButton {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 16px;
-  width: 144px;
-  height: 37px;
-  right: 942px;
-  top: 457px;
-  background: #b2d8d1;
+  padding: .5rem 3rem;
+  background: #B2D8D1;
   border-radius: 20px;
   border: none;
   text-align: center;
-  margin: 0.5rem 0% 0.5rem 0%;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition-duration: 0.3s;
 }
 
-.nameInput {
-  width: 501px;
-  height: 65px;
+.submitButton:hover, .submitButton:focus {
+  background-color: #2A7975;
 }
 
 .questionLayout {
@@ -142,7 +158,7 @@ nav > p {
   height: 25px;
   background: #d3d3d3;
   outline: none;
-  opacity: 0.7;
+  opacity: 0.8;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
@@ -156,22 +172,22 @@ nav > p {
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #4caf50;
+  background: #2A7975;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #4caf50;
+  background: #2A7975;
   cursor: pointer;
 }
-/**************CARDS*******************/
+/**************MEAL CARDS*******************/
 
-.card {
+.card.card-list {
   flex: 0 0 250px;
   background-color: white;
-  margin: 0.5rem;
+  margin: 1rem;
   flex-wrap: wrap;
   border-radius: 10px;
   box-shadow: 01px 3px rgba (0, 0, 0, 0.16), 01px 3px rgba (0, 0, 0, 0.23);
@@ -182,7 +198,7 @@ nav > p {
   display: none;
 }
 
-.card:hover {
+.card-list:hover{
   opacity: 50%;
 }
 
@@ -192,40 +208,101 @@ nav > p {
   margin: 0.5rem 0% 0.5rem 0%;
 }
 .card-deck {
-  margin: 0.5rem;
+    margin: 0rem 2rem;
+ }
+
+#about {
+  margin: 0rem 2rem;
+  display: inline-flex;
 }
 
+
 /**************Screen Adjustments*******************/
+
+@media (min-width: 320px ) {
+  .card-img-top {
+    display: block;
+  }
+  .card-header {
+    padding: 2rem 1rem;
+    font-size: 2rem;
+    line-height: 2rem; 
+  }
+}
 
 @media (min-width: 576px) {
   .card-img-top {
     display: block;
   }
+  .card-header {
+    padding: 3rem 2rem;
+    line-height: 2.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    vertical-align: middle;
+    margin: auto;
+    font-weight: 500;
+    left: 443px;
+    top: 683px;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    vertical-align: middle;
+    margin: auto;
+    font-weight: 300;
+  }
+  .ending {
+    margin: 2rem 3rem;
+    text-align: right;
+  }
+
+  .personalButton {
+  width: 400px;
+  height: 50px;
+  }
+
 }
 
 @media (min-width: 875px) {
   .ending {
     font-size: 10pt;
   }
-  h1 {
-    font-size: 20pt;
-  }
-
   .card-img-top {
     display: block;
   }
+  .card-header {
+    padding: 3rem 3rem; 
+  }
+  .card-deck {
+    margin: 0rem 6rem;
+  }
+  #about {
+    margin: -1rem 7rem;
+    display: inline-flex;
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .personalButton {
+    width: 600px;
+    height: 70px;
+    font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 1200px) {
   .ending {
     font-size: 12pt;
   }
-  h1 {
-    font-size: 25pt;
-  }
-
   .card-img-top {
     display: block;
+  }
+  .card-header {
+    padding: 8rem 15rem; 
   }
 }
 

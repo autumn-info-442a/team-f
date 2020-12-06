@@ -8,6 +8,7 @@ class Card extends Component {
     let pic = topic.img;
     return (
       <div className="card">
+        <div className="card-list">
         <a href={topic.link}>
         <img
           src={require("../img/" + pic + ".jpg")}
@@ -16,9 +17,10 @@ class Card extends Component {
           aria-hidden="true"
         />   
         <div className="card-body">
-          <h3 className="card-title">{topic.name}</h3>
+          <h4 className="card-title">{topic.name}</h4>
         </div>
         </a>
+        </div>
       </div>
     );
   }
