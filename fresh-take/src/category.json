@@ -1,19 +1,19 @@
 [
   {
     "name": "protein-french-toast",
-    "class": "breakfast",
+    "cuisine": "breakfast",
     "img": "protein-french-toast",
     "link": "https://www.bodybuilding.com/recipes/protein-french-toast"
   },
   {
     "name": "cinna-cereal-protein-pancakes",
-    "class": "breakfast",
+    "cuisine": "breakfast",
     "img": "cinna-cereal-protein-pancakes",
     "link": "https://www.bodybuilding.com/recipes/cinna-cereal-protein-pancakes"
   },
   {
     "name": "main-whole-wheat-waffles",
-    "class": "breakfast",
+    "cuisine": "breakfast",
     "img": "main-whole-wheat-waffles",
     "link": "https://ifoodreal.com/healthy-waffle-recipe/"
   }
