@@ -135,17 +135,17 @@ nav > p {
   flex-direction: column;
   align-items: center;
   padding: .5rem 3rem;
-  background: #B2D8D1;
+  background-color: #b2d8d1;
   border-radius: 20px;
   border: none;
   text-align: center;
-  color: #FFFFFF;
   font-weight: 600;
   transition-duration: 0.3s;
 }
 
 .submitButton:hover, .submitButton:focus {
-  background-color: #2A7975;
+  background-color: #214B49;
+  color: white;
 }
 
 .questionLayout {

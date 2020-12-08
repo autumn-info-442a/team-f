@@ -78,7 +78,7 @@ class CustomPlan extends Component {
                                     </div>
                                     <div className="form-group col-md-2">
                                         <input
-                                            id="ft"
+                                            id="in"
                                             className="form-control"
                                             type="number"
                                             min="0"
@@ -202,52 +202,52 @@ class CustomPlan extends Component {
                                 <div className="row">
                                     <div className="form-group col">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="african" value="African" />
-                                            <label class="form-check-label" for="african">African cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="African" />
+                                            <label class="form-check-label" for="african">African</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="american" value="American" />
-                                            <label class="form-check-label" for="american">American cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="American" />
+                                            <label class="form-check-label" for="american">American</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="caribbean" value="Caribbean" />
-                                            <label class="form-check-label" for="caribbean">Caribbean cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="Caribbean" />
+                                            <label class="form-check-label" for="caribbean">Caribbean</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="eastAsian" value="East/Southeast Asian" />
-                                            <label class="form-check-label" for="eastAsian">East/Southeast Asian cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="East/Southeast Asian" />
+                                            <label class="form-check-label" for="eastAsian">East/Southeast Asian</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="european" value="European" />
-                                            <label class="form-check-label" for="european">European cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="European" />
+                                            <label class="form-check-label" for="european">European</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="latinAmerican" value="Latin American" />
-                                            <label class="form-check-label" for="latinAmerican">Latin American cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="Latin American" />
+                                            <label class="form-check-label" for="latinAmerican">Latin American</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="mediterranean" value="Mediterranean" />
-                                            <label class="form-check-label" for="mediterranean">Mediterranean cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="Mediterranean" />
+                                            <label class="form-check-label" for="mediterranean">Mediterranean</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="middleEastern" value="Middle Eastern" />
-                                            <label class="form-check-label" for="middleEastern">Middle Eastern cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="Middle Eastern" />
+                                            <label class="form-check-label" for="middleEastern">Middle Eastern</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="nativeAmerican" value="Native American" />
-                                            <label class="form-check-label" for="nativeAmerican">Native American cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="Native American" />
+                                            <label class="form-check-label" for="nativeAmerican">Native American</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="pacificIslander" value="Pacific Islander" />
-                                            <label class="form-check-label" for="pacificIslander">Pacific Islander cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="Pacific Islander" />
+                                            <label class="form-check-label" for="pacificIslander">Pacific Islander</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="southAsian" value="South Asian" />
-                                            <label class="form-check-label" for="southAsian">South Asian cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="South Asian" />
+                                            <label class="form-check-label" for="southAsian">South Asian</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="checkbox" id="southern" value="Souther" />
-                                            <label class="form-check-label" for="southern">Southern cuisine</label>
+                                            <input class="form-check-input" type="checkbox" id="cuisine" value="Southern" />
+                                            <label class="form-check-label" for="southern">Southern</label>
                                         </div>
                                         </div>
                                     </div>
