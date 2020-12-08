@@ -5,14 +5,14 @@ body {
   margin: 0;
 }
 
-.intro{
+.intro {
   margin-left: 3rem;
 }
 
 .ending {
   font-size: 8pt;
   text-align: center;
-  color: #8F8F8F;
+  color: #8f8f8f;
   margin: 0em 2em 2em 2em;
 }
 
@@ -30,7 +30,7 @@ h1 {
 }
 h2 {
   font-weight: bold;
-  color: #2A7975;
+  color: #2a7975;
 }
 h3 {
   font-size: 1.5rem;
@@ -44,8 +44,11 @@ h4 {
   font-weight: 600;
 }
 
-
 #custom {
+  display: none;
+}
+
+#result {
   display: none;
 }
 
@@ -77,7 +80,7 @@ nav > p {
 .card-header {
   background-color: #2a7975;
   color: #ffffff;
-  padding: 1rem 1rem; 
+  padding: 1rem 1rem;
 }
 
 /* .personalCard {
@@ -123,29 +126,30 @@ nav > p {
   transition-duration: 0.3s;
 }
 
-.personalButton:hover, .personalButton:focus {
-  background-color: #214B49;
+.personalButton:hover,
+.personalButton:focus {
+  background-color: #214b49;
   color: white;
 }
-
 
 /**************Survey*******************/
 .submitButton {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: .5rem 3rem;
-  background: #B2D8D1;
+  padding: 0.5rem 3rem;
+  background-color: #b2d8d1;
   border-radius: 20px;
   border: none;
   text-align: center;
-  color: #FFFFFF;
   font-weight: 600;
   transition-duration: 0.3s;
 }
 
-.submitButton:hover, .submitButton:focus {
-  background-color: #2A7975;
+.submitButton:hover,
+.submitButton:focus {
+  background-color: #214b49;
+  color: white;
 }
 
 .questionLayout {
@@ -172,14 +176,14 @@ nav > p {
   appearance: none;
   width: 25px;
   height: 25px;
-  background: #2A7975;
+  background: #2a7975;
   cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
-  background: #2A7975;
+  background: #2a7975;
   cursor: pointer;
 }
 /**************MEAL CARDS*******************/
@@ -198,7 +202,7 @@ nav > p {
   display: none;
 }
 
-.card-list:hover{
+.card-list:hover {
   opacity: 50%;
 }
 
@@ -208,25 +212,24 @@ nav > p {
   margin: 0.5rem 0% 0.5rem 0%;
 }
 .card-deck {
-    margin: 0rem 2rem;
- }
+  margin: 0rem 2rem;
+}
 
 #about {
   margin: 0rem 2rem;
   display: inline-flex;
 }
 
-
 /**************Screen Adjustments*******************/
 
-@media (min-width: 320px ) {
+@media (min-width: 320px) {
   .card-img-top {
     display: block;
   }
   .card-header {
     padding: 2rem 1rem;
     font-size: 2rem;
-    line-height: 2rem; 
+    line-height: 2rem;
   }
 }
 
@@ -260,10 +263,9 @@ nav > p {
   }
 
   .personalButton {
-  width: 400px;
-  height: 50px;
+    width: 400px;
+    height: 50px;
   }
-
 }
 
 @media (min-width: 875px) {
@@ -274,7 +276,7 @@ nav > p {
     display: block;
   }
   .card-header {
-    padding: 3rem 3rem; 
+    padding: 3rem 3rem;
   }
   .card-deck {
     margin: 0rem 6rem;
@@ -291,7 +293,7 @@ nav > p {
     width: 600px;
     height: 70px;
     font-size: 1.5rem;
-    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -302,7 +304,7 @@ nav > p {
     display: block;
   }
   .card-header {
-    padding: 8rem 15rem; 
+    padding: 8rem 15rem;
   }
 }
 

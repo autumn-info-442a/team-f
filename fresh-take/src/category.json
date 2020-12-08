@@ -1,20 +1,218 @@
 [
   {
-    "name": "protein-french-toast",
-    "cuisine": "breakfast",
-    "img": "protein-french-toast",
-    "link": "https://www.bodybuilding.com/recipes/protein-french-toast"
+    "name": "Chicken Piccata",
+    "cuisine": "American",
+    "img": "chicken-piccata",
+    "link": "https://themodernproper.com/chicken-piccata"
   },
   {
-    "name": "cinna-cereal-protein-pancakes",
-    "cuisine": "breakfast",
-    "img": "cinna-cereal-protein-pancakes",
-    "link": "https://www.bodybuilding.com/recipes/cinna-cereal-protein-pancakes"
+    "name": "Pizza Sliders",
+    "cuisine": "American",
+    "img": "pizza-sliders",
+    "link": "http://www.eatingwell.com/recipe/280061/pizza-sliders/"
   },
   {
-    "name": "main-whole-wheat-waffles",
-    "cuisine": "breakfast",
-    "img": "main-whole-wheat-waffles",
-    "link": "https://ifoodreal.com/healthy-waffle-recipe/"
-  }
+    "name": "Zucchini Shrimp Salad",
+    "cuisine": "American",
+    "img": "zucchini-shrimp-salad",
+    "link": "https://www.bodybuilding.com/recipes/sesame-tahini-shrimp-and-zucchini-linguine-pasta-salad"
+  },
+  {
+    "name": "Chicken Jollof Rice",
+    "cuisine": "African",
+    "img": "jollof-rice",
+    "link": "https://www.africanbites.com/chicken-jollof-rice/"
+  },
+  {
+    "name": "Superkanja Okra Stew",
+    "cuisine": "African",
+    "img": "superkanja",
+    "link": "https://www.congocookbook.com/soup-and-stew-recipes/superkanja/"
+  },
+  {
+    "name": "Ethiopian Cabbage (Atkilt Wot)",
+    "cuisine": "African",
+    "img": "ethiopian-cabbage",
+    "link": "https://urbanfarmie.com/ethiopian-cabbage/"
+  },
+  {
+    "name": "Plantain and Chickpea Curry",
+    "cuisine": "Caribbean",
+    "img": "plantain-chickpea",
+    "link": "https://originalflava.com/meals/plantain-chickpea-curry/"
+  },
+  {
+    "name": "Jerk Chicken",
+    "cuisine": "Caribbean",
+    "img": "jerk-chicken",
+    "link": "https://healthyrecipesblogs.com/jerk-chicken/"
+  },
+  {
+    "name": "Caribbean Chicken Salad",
+    "cuisine": "Caribbean",
+    "img": "caribbean-salad",
+    "link": "https://originalflava.com/uncategorized/caribbean-chicken-salad/"
+  },
+  {
+    "name": "Shrimp and Vegetable Stir Fry",
+    "cuisine": "East/Southeast Asian",
+    "img": "shrimp-stir-fry",
+    "link": "https://www.chinasichuanfood.com/shrimp-and-vegetable-stir-fry/"
+  },
+  {
+    "name": "Bibimbap Bowl",
+    "cuisine": "East/Southeast Asian",
+    "img": "bibimbap",
+    "link": "https://www.maangchi.com/recipe/bibimbap"
+  },
+  {
+    "name": "Fresh Spring Rolls",
+    "cuisine": "East/Southeast Asian",
+    "img": "spring-rolls",
+    "link": "https://healthynibblesandbits.com/fresh-vietnamese-spring-rolls-with-video/"
+  },
+  {
+    "name": "Zucchini Pasta with Garden Green Sauce",
+    "cuisine": "European",
+    "img": "zucchini-pasta",
+    "link": "https://www.delicious.com.au/recipes/zucchini-pasta-garden-green-sauce-del-sunday/uaY4j0uC?r=recipes/group/3mw5wg8a"
+  },
+  {
+    "name": "Hearty Vegetable Italian Hash",
+    "cuisine": "European",
+    "img": "italian-hash",
+    "link": "https://www.eatthis.com/italian-hash-eggs-recipe/"
+  },
+  {
+    "name": "Croatian Minestrone (Maneštra)",
+    "cuisine": "European",
+    "img": "minestrone",
+    "link": "https://honestcooking.com/istarska-manestra-minestrone-croatian-twist/"
+  },
+  {
+    "name": "Steak Fajitas",
+    "cuisine": "Latin American",
+    "img": "steak-fajita",
+    "link": "https://www.isabeleats.com/easy-steak-fajitas/"
+  },
+  {
+    "name": "Quinoa Enchilada Bake",
+    "cuisine": "Latin American",
+    "img": "enchilada",
+    "link": "https://www.isabeleats.com/broccoli-quinoa-enchilada-casserole/"
+  },
+  {
+    "name": "Shrimp Ceviche",
+    "cuisine": "Latin American",
+    "img": "ceviche",
+    "link": "https://www.spendwithpennies.com/easy-shrimp-ceviche-recipe/"
+  },
+  {
+    "name": "Greek Orzo Salad",
+    "cuisine": "Mediterranean",
+    "img": "orzo-salad",
+    "link": "https://www.acouplecooks.com/greek-orzo-salad/"
+  },
+  {
+    "name": "Roasted Mediterranean Vegetables",
+    "cuisine": "Mediterranean",
+    "img": "mediterranean-vegetable",
+    "link": "https://simplegreensmoothies.com/recipes/mediterranean-recipes"
+  },
+  {
+    "name": "Quinoa Falafel",
+    "cuisine": "Mediterranean",
+    "img": "falafel",
+    "link": "https://wendypolisi.com/quinoa-falafel-with-yoghurt-tahini-sauce/"
+  },
+  {
+    "name": "Loaded Vegetable Hummus",
+    "cuisine": "Middle Eastern",
+    "img": "hummus",
+    "link": "https://www.foodnetwork.ca/healthy-eating/blog/loaded-hummus-recipe/"
+  },
+  {
+    "name": "Chicken Shawarma with Flatbread",
+    "cuisine": "Middle Eastern",
+    "img": "shawarma",
+    "link": "https://simply-delicious-food.com/chicken-shawarma-with-easy-flatbread/"
+  },
+  {
+    "name": "Fattoush Salad",
+    "cuisine": "Middle Eastern",
+    "img": "fattoush",
+    "link": "https://feelgoodfoodie.net/recipe/lebanese-fattoush-salad/"
+  },
+  {
+    "name": "Three Sisters Soup",
+    "cuisine": "Native American",
+    "img": "three-sisters-soup",
+    "link": "https://recipes.heart.org/en/recipes/three-sisters-soup"
+  },
+  {
+    "name": "Mohegan Corn and Bean Succotash",
+    "cuisine": "Native American",
+    "img": "succotash",
+    "link": "http://nativeamericannetroots.net/diary/331"
+  },
+  {
+    "name": "Makah Slow Cooked Salmon",
+    "cuisine": "Native American",
+    "img": "makah-salmon",
+    "link": "http://wegottaeat.com/chef_linzi/recipes/makah-indian-slow-cooked-salmon"
+  },
+  {
+    "name": "Guam Chamorro Chicken Kelaguen",
+    "cuisine": "Pacific Islander",
+    "img": "kelaguen",
+    "link": "https://www.annieschamorrokitchen.com/chicken-kelaguen-flour-titiyas/"
+  },
+  {
+    "name": "Corned Beef and Green Leaf Samoan Palusami",
+    "cuisine": "Pacific Islander",
+    "img": "palusami",
+    "link": "https://www.allrecipes.com/recipe/149546/samoan-palusami/"
+  },
+  {
+    "name": "Coconut Poached Chicken Salad",
+    "cuisine": "Pacific Islander",
+    "img": "coconut-chicken-salad",
+    "link": "https://www.thecoconet.tv/coco-cookbook/pacific-recipes-and-food-tips/coconut-poached-chicken-salad-salati-moa/"
+  },
+  {
+    "name": "Nutritious Gluten Free Gumbo",
+    "cuisine": "Southern",
+    "img": "gumbo",
+    "link": "https://allthehealthythings.com/gluten-free-gumbo/"
+  },
+  {
+    "name": "Southern Collard Greens",
+    "cuisine": "Southern",
+    "img": "collard-greens",
+    "link": "https://www.thehungryhutch.com/vegetarian-southern-collard-greens-recipe/"
+  },
+  {
+    "name": "Healthy Cajun Jambalaya",
+    "cuisine": "Southern",
+    "img": "jambalaya",
+    "link": "https://www.momables.com/healthy-cajun-jambalaya/"
+  },  
+  {
+    "name": "Low Carb Beef Stew",
+    "cuisine": "default",
+    "img": "beefstew",
+    "link": "https://www.bodybuilding.com/recipes/low-carb-beef-stew"
+  },
+  {
+    "name": "Tomato and Fresh Aioli Sandwich",
+    "cuisine": "default",
+    "img": "tomato-and-fresh-aioli-sandwich",
+    "link": "https://www.bodybuilding.com/recipes/chef-robert-irvine-tomato-and-fresh-aioli-sandwich"
+  },
+  {
+    "name": "Chicken Pot Pie",
+    "cuisine": "default",
+    "img": "potpie",
+    "link": "https://www.bodybuilding.com/recipes/healthy-chicken-pot-pie"
+  }  
 ]

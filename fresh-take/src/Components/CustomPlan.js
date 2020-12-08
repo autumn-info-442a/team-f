@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../style.css";
+import ResultsPage from "./ResultsPage";
 
 
 class CustomPlan extends Component {
@@ -13,9 +14,12 @@ class CustomPlan extends Component {
             return values;
         }
 
-        let saveData = (event) => {
-            event.preventDefault();
-            let userInfo = [
+        let userData = function submit() {
+            let survey = document.getElementById("survey");
+            let result = document.getElementById("result");
+            survey.style.display = "none";
+            result.style.display = "block";
+            return [
                 document.getElementById("name").value,
                 document.getElementById("ft").value,
                 document.getElementById("in").value,
@@ -28,14 +32,14 @@ class CustomPlan extends Component {
                 getSelectedCheckboxValues("cuisine"),
                 getSelectedCheckboxValues("goal")
             ];
-            console.log(userInfo);
-        };
-
-
+        }
+      
         return (
             <form>
-                <div className="container">
-
+                <div id="result">
+                    <ResultsPage userData={userData}/>
+                </div>
+                <div className="container" id="survey">
                     {/* Get Started */}
                     <div className="container">
                         <div className="row">
@@ -278,7 +282,7 @@ class CustomPlan extends Component {
                                 </div>
                             </div>
                         </div>
-                        <button id="subButton" className="submitButton mb-5" onClick={saveData}> Submit </button>
+                        <button id="subButton" className="submitButton mb-5" onClick={userData}> Submit </button>
                     </div>
             </form>
         );

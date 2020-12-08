@@ -33,18 +33,6 @@ class Dashboard extends Component {
         </div>
 
         <div id="dashboard">
-          {/* Personalization section */}
-          {/* <div className="personalCard">
-            <div className="personalTitleCard">
-              <h3 className="personalTitle">Personalize your nutrition to fit your preferences.</h3>
-            </div>
-            <div className="card-body" onClick={customButton}>
-              <button className="personalButton">
-                <h3 className="card-title" style={{ color: "#4F4F4F" }}>Create Plan</h3>
-              </button>
-            </div>
-          </div> */}
-
             <div class="card mb-3 text-center">
               <div class="card-header">
                 <h1>Personalize your nutrition to fit your preferences.</h1>
@@ -63,7 +51,7 @@ class Dashboard extends Component {
               </div>
               <div>
                 <section>
-                  <CardList />
+                  <CardList cuisine="default"/>
                 </section>
               </div>
               <div className="sectionTitle">
@@ -71,7 +59,7 @@ class Dashboard extends Component {
               </div>
               <div >
                 <section>
-                  <CardList />
+                  <CardList cuisine="default"/>
                 </section>
               </div>
               <div className="sectionTitle">

@@ -28,7 +28,9 @@ class Card extends Component {
 class CardList extends Component {
   render() {
     let newList = CATEGORY_DATA.map((type) => {
-      return <Card key={type.name} category={type} />;
+      if (type.cuisine === this.props.cuisine) {
+        return <Card key={type.name} category={type} />;
+      }
     });
 
     return <div className="card-deck">{newList}</div>;
