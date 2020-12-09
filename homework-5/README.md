@@ -61,7 +61,7 @@ ____
 - Cuisine page done
 
 **Due 11/30**
-- Curate list of suggested meals (4 meals for each cultural cuisine, at least 1 tagged as “accessible” aka few ingredients, cheap, simple ingredients, or easy/quick to make)
+- Curate list of suggested meals
   - American
   - East/Southeast Asian
   - African
