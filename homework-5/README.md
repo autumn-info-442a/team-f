@@ -191,10 +191,10 @@ During each build, we will run tests to double check and verify its accuracy--mo
 - Justification: Links need to be reliable to gain trust of the user/stakeholder. Ensuring that the link is correctly hyperlinked is important and is best suited with human inspection.
 
 ### Tell Us About Yourself: ###
-**T-1: “Height”, “age”, and “weight” input must only accept number input**
+**T-1: “Height”, “Age”, and “Weight” input must only accept number input**
 - Manual inspection: Webpage should not advance if string or float entered by implementing a rule that it is only number values only. This can be checked by reviewing the code to see the input type printing an error message if values are not allowed.
-  - Open up the code file containing the “height,” “age,” and “weight” input section of the Tell Us About Yourself page
-  - Review that the code block labels the height, age, and weight input as a number type 
+  - Open up the code file containing the “Height,” “Age,” and “Weight” input section of the Tell Us About Yourself page
+  - Review that the code block labels the Height, Age, and Weight input as a number type 
   - Review that there is the code with the error message written as “Provide a number”
 - Justification: Because there are numerous cases of what input can be provided, it is important for the program itself to be automatically checking and prevent any non-numerical cases right away.
 
@@ -205,7 +205,7 @@ During each build, we will run tests to double check and verify its accuracy--mo
   - Verify that href link redirects to ‘Budget’ page
 - Justification: Links need to be reliable to gain trust of the user/stakeholder. Ensuring that the link is correctly hyperlinked is important.
 
-**T-3: “Continue” button is disabled if height (for ft), age, weight, and physical activity level are empty**
+**T-3: “Continue” button is disabled if "Height" (for ft), Age, Weight, and Physical Activity Level are empty**
 - Manual testing: Button will be displayed with light opacity and cannot be interacted with/clicked on all tested devices.
   - Open Google Chrome on any computer
   - Navigate to website
