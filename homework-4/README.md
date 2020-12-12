@@ -9,100 +9,155 @@
 ____
 ### SurveyModel
 - Responsible for containing user inputted survey answers and calculating suggested nutrition plans from the input
-Client view
+- Client view
 - The ButtonController and the ResultView communicate with the model. They communicate:
- - The ButtonController can send the information of each question page to the SurveyModel so it will manipulate the user’s data
- - The ResultView can ask the SurveyModel about the user’s inputted answers and suggested nutritional information
-| Code Stubs | Survey Model Stub Of Code |
-| ---- | ----|
+    - The ButtonController can send the information of each question page to the SurveyModel so it will manipulate the user’s data
+    - The ResultView can ask the SurveyModel about the user’s inputted answers and suggested nutritional information
 
 
- `function getCalorie(age, weight, gender, height) {
- //TODO calculate estimated calorie with algorithm
- return [amount of suggested calories]
-} ` <br></br>
+```
+function getCalorie(age, weight, gender, height) {
+  //TODO calculate estimated calorie with algorithm
+  return [amount of suggested calories]
+} 
 
- `function getVegetables(age, gender) {
- //TODO calculate vegetable servings with algorithm
- return [amount of vegetable servings suggested]
-} ` <br></br>
+function getVegetables(age, gender) {
+  //TODO calculate vegetable servings with algorithm
+  return [amount of vegetable servings suggested]
+}
 
- ` function getFruits(age, gender) {
+function getFruits(age, gender) {
  //TODO calculate fruit servings with algorithm
  return [amount of fruit servings suggested]
-} ` <br></br>
- ` function getWater(weight, activity) {
+}
+
+function getWater(weight, activity) {
  //TODO calculate water per day with algorithm
  return [amount of water suggested]
-} ` </br></br>
-`  function getExercise(age) {
+}
+
+function getExercise(age) {
  //TODO calculate recommended amount of exercise with algorithm
  return [amount of exercise needed]
-} ` <br></br>
+} 
+```
 ____
 ### InformationModel ###
-- Responsible for containing all the external nutrition resources, articles, and suggested meals
+- Responsible for containing all the external nutrition resources, articles, and suggested meals 
 - Client view
-- The CardController communicates with the model. They communicate:
- - The CardController can ask the InformationModel for the suggested resources and meals
+- The CardController communicates with the model. They communicate: 
+  - The CardController can ask the InformationModel for the suggested resources and meals
+
+``` 
+function getNutritionArticle(internal_article) {
+	//TODO import an informational article
+	return [one article]
+}
+```
 ____
-### ButtonController
-- Responsible for saving user input and sending information to Survey Model
+### SurveyController
+- Responsible for saving user input, managing flow of the survey, and sending information to SurveyModel
 - Client View
-- The HomeView, NameView, PersonalView, BudgetView, AccessibleView, CuisineView, and NutritionView communicate with the controller. They communicate:
- - Each HomeView, NameView, PersonalView, BudgetView, AccessibleView, CuisineView, and NutritionView shares user input to the ButtonController when they click a button to continue to the next step of the survey
+- The SurveyView communicates with the controller. They communicate: 
+  - The SurveyView shares user input to the SurveyController when they click a button to continue to the next step of the survey
+
+```
+Class UserInfo extends Component {
+  //TODO implement actual component
+  render() {
+    return(
+      info = [ ];
+    )
+  }
+}
+Export default UserInfo;
+```
+
 ---
 ### CardController
 - Responsible for saving and linking nutrition information in the suggested meals and nutrition resource cards
 - Client View
-- The ResultView communicates with the controller. They communicate:
- - The ResultView sends input to the CardController when a user clicks a meal or nutrition resource card
+- The ResultView communicates with the controller. They communicate: 
+  - The ResultView sends input to the CardController when a user clicks a meal or nutrition resource card
+```
+Class CardController extends Component {
+  //TODO implement actual component
+    render() {
+      return(
+      // get list of data needed to make card in json file
+      // iterate through list and make card
+      // return list of cards
+      )
+    }
+  }
+Export default CardController;
+```
 ---
 ### ResultView
 - Responsible for displaying the nutrition survey results based on the model data of user input
 - Client view
-- The SurveyModel and InformationModel communicate with the view. They communicate:
- - The SurveyModel updates user information to the ResultView to display the user’s suggested number of nutrition intake/servings
- - The InformationModel updates user information to the ResultView to display the user’s nutrition tips, resources, and suggested meals
+- The SurveyModel and InformationModel communicate with the view. They communicate: 
+  - The SurveyModel updates user information to the ResultView to display the user’s suggested number of nutrition intake/servings
+  - The InformationModel updates user information to the ResultView to display the user’s nutrition tips, resources, and suggested meals
+```
+Class ResultView extends Component {
+  //TODO implement actual component
+  render() {
+    return(
+      <CustomMetrics />
+      <SuggestedHealthAdvice />
+      <SuggestedMeals />
+    )
+  }
+}
+Export default ResultView;
+```
+
 ---
 ### HomeView
-- Responsible for displaying the initial home page layout (banner, cards, and button UI)
+- Responsible for displaying the initial home page layout (banner, cards, and button UI) 
 - Client view
-- The CardController and ButtonController communicate with the view. They communicate:
- - The HomeView communicates with CardController by sending input when a user clicks a meal card
- - The HomeView communicates with ButtonController by sending input when a user clicks button to personalize survey
+- The CardController and SurveyController communicate with the view. They communicate: 
+  - The HomeView communicates with CardController by sending input when a user clicks a meal card
+  - The HomeView communicates with SurveyController by sending input when a user clicks button to personalize survey
+```
+Class HomeView extends Component {
+  //TODO implement actual component
+    render() {
+      return(
+        <Header />
+        <CreatePlan />
+        <SampleUsers />
+        <SampleMeals />
+        <p>{About Us}</p>
+        <Footer />
+      )
+    }
+  }
+Export default HomeView;
+```
 ---
 ### SurveyView
-- Holds within it _NameView_, _PersonalView_, _BudgetView_, _AccessibleView_, _CuisineView_, & _NutritionView_
-
-#### _NameView_
- - Responsible for displaying questions about asking users for their name.
- - Client View
- - The ButtonController communicates with the view. They communicate:
-   - The NameView communicates with ButtonController by sending input when a user clicks the button to continue to the next question
-<br></br>
-#### _PersonalView_
- - Responsible for displaying text input for users height, weight, and age, in addition to displaying drop down responses for gender and physical activity level.
- - Client View
- - The ButtonController communicates with the view. They communicate:   
-   -  The PersonalView communicates with ButtonController by sending input when a user clicks the button to continue to the next question
-#### _BudgetView_
- - Responsible for displaying sliding scale for budget and user’s selection
- - Client view
- - The ButtonController communicates with the view. They communicate:
-  - The BudgetView communicates with ButtonController by sending input when a user clicks the button to continue to the next question <br></br>
-#### _AccessibleView_ <br></br>
- - Responsible for displaying accessible fresh food question and user input
- - Client view
- - The ButtonController communicates with the view. They communicate:
-  - The BudgetView communicates with ButtonController by sending input when a user clicks the button to continue to the next question
-#### _CuisineView_
- - Responsible for displaying multiple cuisine options that user selects
- - Client view
- - The ButtonController communicates with the view. They communicate:
-  - The CuisineView communicates with ButtonController by sending input when a user clicks the button to continue to the next question
-#### _NutritionView_
- - Responsible for displaying nutritional goal question and user’s selection
- - Client view
- - The ButtonController communicates with the view. They communicate:
-  - The NutritionView communicates with ButtonController by sending input when a user clicks the button to continue to the next question
+- Responsible for displaying all survey related questions and answer input for the users 
+- Client View
+- The SurveyView communicates with the SurveyController by sending input when a user interacts with the buttons or UI elements in this view
+```
+class CustomPlan extends Component {
+  //TODO implement actual component
+  render() {
+    <form>
+      <div>{Name Question}</div>
+      <div>{Height Question}</div>
+      <div>{Weight Question}</div>
+      <div>{Age Question}</div>
+      <div>{Gender Question}</div>
+      <div>{Physical Activity Question}</div>
+      <div>{Budget Question}</div>
+      <div>{Accessible Food Question}</div>
+      <div>{Cuisine Question}</div>
+      <div>{Nutrition Question}</div>
+    </form>
+  }
+}
+Export default CustomPlan;
+```
