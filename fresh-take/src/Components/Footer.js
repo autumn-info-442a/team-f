@@ -5,7 +5,7 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <p className="ending">&#169; 2020 Fresh Take by: Chris Yee, Tiffany Wong, Nicola Kalderash</p>
+        <p className="ending">&#169; 2020 Fresh Take by: Tiffany Wong, Chris Yee, Nicola Kalderash</p>
       </footer>
     );
   }
