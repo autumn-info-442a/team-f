@@ -6,6 +6,20 @@ import Header from "./Header";
 import CustomPlan from "./CustomPlan";
 
 class Dashboard extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      userData: {},
+      test: 123
+    }
+  }
+
+  updateState(key, value) { //key = test value =123
+    let tempUserData = this.state.userData;
+    tempUserData[key] = value
+    this.setState({userData: tempUserData})
+  }
+
   render() {
 
     function homeButton() {
@@ -29,7 +43,7 @@ class Dashboard extends Component {
         </div>
 
         <div id="custom">
-          <CustomPlan />
+          <CustomPlan userData={this.state.userData} updateState={this.updateState}/>
         </div>
 
         <div id="dashboard">
@@ -51,7 +65,7 @@ class Dashboard extends Component {
               </div>
               <div>
                 <section>
-                  <CardList cuisine="default"/>
+                  <CardList cuisine="quote"/>
                 </section>
               </div>
               <div className="sectionTitle">

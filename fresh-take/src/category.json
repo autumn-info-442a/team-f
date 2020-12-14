@@ -214,5 +214,23 @@
     "cuisine": "default",
     "img": "potpie",
     "link": "https://www.bodybuilding.com/recipes/healthy-chicken-pot-pie"
+  },  
+  {
+    "name": "\"It's so easy to get started.\"",
+    "cuisine": "quote",
+    "img": "person-cooking",
+    "link": ""
+  },
+  {
+    "name": "\"Before I didn't know much about nutrition, but now with this I know where to begin.\"",
+    "cuisine": "quote",
+    "img": "person-eat",
+    "link": ""
+  },
+  {
+    "name": "\"The curated nutritional advice and meals are so convenient.\"",
+    "cuisine": "quote",
+    "img": "person-kitchen",
+    "link": ""
   }  
 ]

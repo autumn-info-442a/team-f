@@ -17,9 +17,6 @@ body {
 }
 
 .sectionTitle {
-  /* width: 548px;
-  height: 105px;
-  display: flex; */
   margin: 3rem 1rem;
   text-align: center;
 }
@@ -48,9 +45,9 @@ h4 {
   display: none;
 }
 
-#result {
+/* #result {
   display: none;
-}
+} */
 
 /*******************HEADER*********************/
 button > img {
@@ -82,40 +79,6 @@ nav > p {
   color: #ffffff;
   padding: 1rem 1rem;
 }
-
-/* .personalCard {
-  flex: 0 0 250px;
-  background-color: white;
-  margin: 41px 34px 85px;
-  flex-wrap: wrap;
-  border-radius: 5px;
-  width: 1372px;
-  height: 450px;
-  left: 34px;
-  top: 148px;
-  text-align: center;
-  box-shadow: 01px 3px rgba (0, 0, 0, 0.16), 01px 3px rgba (0, 0, 0, 0.23);
-}
-
-.personalTitleCard {
-  background-color: #2a7975;
-  width: 1372px;
-  height: 339px;
-  border-radius: 5px 5px 0px 0px;
-}
-
-.personalTitle {
-  width: 701px;
-  height: 105px;
-  left: 349px;
-  top: 276px;
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 52px;
-  display: flex;
-  color: #ffffff;
-  position: absolute;
-} */
 
 .personalButton {
   background-color: #b2d8d1;
@@ -185,6 +148,11 @@ nav > p {
   height: 25px;
   background: #2a7975;
   cursor: pointer;
+}
+
+span {
+  color: #d00000;
+  font-size: .8rem;
 }
 /**************MEAL CARDS*******************/
 
