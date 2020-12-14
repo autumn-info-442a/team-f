@@ -112,7 +112,9 @@ class ResultsPage extends Component {
     return exercise;
   }
 
+
   render() {
+    console.log(this.props.userData.goal, "goal");
     // calculate all the calories before returing 
     let userData = this.props.userData;
     return (
@@ -129,7 +131,7 @@ class ResultsPage extends Component {
             <p className="resultNum">{this.calcCalories()} Calories / Day</p>
           </div>
           <div className="col">
-            <p className="resultNum">{this.calcFruitVeg()} Servings of Vegetables</p>
+            <p><span className="resultNum">{this.calcFruitVeg()}</span> Servings of Vegetables</p>
           </div>
         </div>
 
@@ -144,7 +146,7 @@ class ResultsPage extends Component {
 
         <div className="row text-center">
           <div className="col">
-            <p className="resultNum">{this.calcWater()} Cups of Water</p>
+            <p className="resultNum">{this.calcWater()} Ounce of Water</p>
           </div>
           <div className="col">
           </div>
@@ -161,8 +163,8 @@ class ResultsPage extends Component {
             <p>Take a look at some of these nutritional resources to support your needs and goals.</p>
           </div>
         </div>
-
-        <CardList cuisine={this.props.userData.goal} />
+        
+        <CardList cuisine={userData.goal[0]} />
 
         <div className="row text-center">
           <div className="col mt-4 mb-3">
@@ -176,7 +178,7 @@ class ResultsPage extends Component {
           </div>
         </div>
 
-        <CardList cuisine="default" />
+        <CardList cuisine={userData.cuisine[0]} />
 
       </div>
     );

@@ -8,7 +8,7 @@
   {
     "name": "Pizza Sliders",
     "cuisine": "American",
-    "img": "pizza-sliders",
+    "w": "pizza-sliders",
     "link": "http://www.eatingwell.com/recipe/280061/pizza-sliders/"
   },
   {
@@ -235,73 +235,73 @@
   }, 
   {
     "name": "The 14 Best Ways to Burn Fat Fast",
-    "cuisine": "loseFat",
+    "cuisine": "Lose fat",
     "img": "14",
     "link": "https://www.healthline.com/nutrition/best-ways-to-burn-fat"
   },
   {
     "name": "20 Effective Tips to Lose Belly Fat (Backed by Science)",
-    "cuisine": "loseFat",
+    "cuisine": "Lose fat",
     "img": "20",
     "link": "https://www.healthline.com/nutrition/20-tips-to-lose-belly-fat"
   },
   {
     "name": "The Skinny on Burning Body Fat",
-    "cuisine": "loseFat",
+    "cuisine": "Lose fat",
     "img": "skinny",
     "link": "https://greatist.com/health/how-to-lose-body-fat"
   }, 
   {
     "name": "What You Can Do to Maintain Your Health",
-    "cuisine": "beHealthier",
+    "cuisine": "Be healthier",
     "img": "maintain",
     "link": "https://familydoctor.org/what-you-can-do-to-maintain-your-health/"
   },
   {
     "name": "22 Simple Ways to Get Healthier With Minimal Effort",
-    "cuisine": "beHealthier",
+    "cuisine": "Be healthier",
     "img": "22",
     "link": "https://www.healthline.com/nutrition/22-ways-to-get-healthy"
   },
   {
     "name": "15 Easy Ways to Be Healthier",
-    "cuisine": "beHealthier",
+    "cuisine": "Be healthier",
     "img": "15",
     "link": "https://www.gaiam.com/blogs/discover/15-easy-ways-to-be-healthier"
   }, 
   {
     "name": "How to Gain Weight Fast and Safely",
-    "cuisine": "gainWeight",
+    "cuisine": "Gain weight",
     "img": "gain",
     "link": "https://www.healthline.com/nutrition/how-to-gain-weight"
   },
   {
     "name": "The 18 Best Healthy Foods to Gain Weight Fast",
-    "cuisine": "gainWeight",
+    "cuisine": "Gain weight",
     "img": "18",
     "link": "https://www.healthline.com/nutrition/18-foods-to-gain-weight"
   },
   {
     "name": "Trying to Gain Weight? These 7 Strategies Can Help",
-    "cuisine": "gainWeight",
+    "cuisine": "Gain weight",
     "img": "7",
     "link": "https://www.henryford.com/blog/2020/07/trying-to-gain-weight-7-tips"
   }, 
   {
     "name": "What You Can Do to Maintain Your Health",
-    "cuisine": "none",
+    "cuisine": "Nothing specific",
     "img": "maintain",
     "link": "https://familydoctor.org/what-you-can-do-to-maintain-your-health/"
   },
   {
     "name": "22 Simple Ways to Get Healthier With Minimal Effort",
-    "cuisine": "none",
+    "cuisine": "Nothing specific",
     "img": "22",
     "link": "https://www.healthline.com/nutrition/22-ways-to-get-healthy"
   },
   {
     "name": "15 Easy Ways to Be Healthier",
-    "cuisine": "none",
+    "cuisine": "Nothing specific",
     "img": "15",
     "link": "https://www.gaiam.com/blogs/discover/15-easy-ways-to-be-healthier"
   }
