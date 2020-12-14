@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import CardList from "./CardList";
 import Header from "./Header";
 import CustomPlan from "./CustomPlan";
+import Comment from "./Comment";
 
 class Dashboard extends Component {
   constructor(props) {
@@ -65,7 +66,7 @@ class Dashboard extends Component {
               </div>
               <div>
                 <section>
-                  <CardList cuisine="quote"/>
+                  <Comment cuisine="quote"/>
                 </section>
               </div>
               <div className="sectionTitle">

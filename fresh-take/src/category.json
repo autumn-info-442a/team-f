@@ -232,5 +232,78 @@
     "cuisine": "quote",
     "img": "person-kitchen",
     "link": ""
-  }  
+  }, 
+  {
+    "name": "The 14 Best Ways to Burn Fat Fast",
+    "cuisine": "loseFat",
+    "img": "14",
+    "link": "https://www.healthline.com/nutrition/best-ways-to-burn-fat"
+  },
+  {
+    "name": "20 Effective Tips to Lose Belly Fat (Backed by Science)",
+    "cuisine": "loseFat",
+    "img": "20",
+    "link": "https://www.healthline.com/nutrition/20-tips-to-lose-belly-fat"
+  },
+  {
+    "name": "The Skinny on Burning Body Fat",
+    "cuisine": "loseFat",
+    "img": "skinny",
+    "link": "https://greatist.com/health/how-to-lose-body-fat"
+  }, 
+  {
+    "name": "What You Can Do to Maintain Your Health",
+    "cuisine": "beHealthier",
+    "img": "maintain",
+    "link": "https://familydoctor.org/what-you-can-do-to-maintain-your-health/"
+  },
+  {
+    "name": "22 Simple Ways to Get Healthier With Minimal Effort",
+    "cuisine": "beHealthier",
+    "img": "22",
+    "link": "https://www.healthline.com/nutrition/22-ways-to-get-healthy"
+  },
+  {
+    "name": "15 Easy Ways to Be Healthier",
+    "cuisine": "beHealthier",
+    "img": "15",
+    "link": "https://www.gaiam.com/blogs/discover/15-easy-ways-to-be-healthier"
+  }, 
+  {
+    "name": "How to Gain Weight Fast and Safely",
+    "cuisine": "gainWeight",
+    "img": "gain",
+    "link": "https://www.healthline.com/nutrition/how-to-gain-weight"
+  },
+  {
+    "name": "The 18 Best Healthy Foods to Gain Weight Fast",
+    "cuisine": "gainWeight",
+    "img": "18",
+    "link": "https://www.healthline.com/nutrition/18-foods-to-gain-weight"
+  },
+  {
+    "name": "Trying to Gain Weight? These 7 Strategies Can Help",
+    "cuisine": "gainWeight",
+    "img": "7",
+    "link": "https://www.henryford.com/blog/2020/07/trying-to-gain-weight-7-tips"
+  }, 
+  {
+    "name": "What You Can Do to Maintain Your Health",
+    "cuisine": "none",
+    "img": "maintain",
+    "link": "https://familydoctor.org/what-you-can-do-to-maintain-your-health/"
+  },
+  {
+    "name": "22 Simple Ways to Get Healthier With Minimal Effort",
+    "cuisine": "none",
+    "img": "22",
+    "link": "https://www.healthline.com/nutrition/22-ways-to-get-healthy"
+  },
+  {
+    "name": "15 Easy Ways to Be Healthier",
+    "cuisine": "none",
+    "img": "15",
+    "link": "https://www.gaiam.com/blogs/discover/15-easy-ways-to-be-healthier"
+  }
+
 ]

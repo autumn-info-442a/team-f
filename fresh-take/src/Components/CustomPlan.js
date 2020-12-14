@@ -36,13 +36,6 @@ class CustomPlan extends Component {
             errors["name"] = "Enter name";
         }
 
-        if (typeof input["name"] !== "undefined") {
-            if (!input["name"].match(/^[a-zA-Z]+$/)) {
-                formValidation = false;
-                errors["name"] = "Only letters";
-            }
-        }
-
         //Height (ft)
         if (!input["ft"]) {
             formValidation = false;

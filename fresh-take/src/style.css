@@ -156,6 +156,10 @@ span {
 }
 /**************MEAL CARDS*******************/
 
+.resultNum {
+  font-weight: bold; 
+}
+
 .card.card-list {
   flex: 0 0 250px;
   background-color: white;
@@ -172,6 +176,10 @@ span {
 
 .card-list:hover {
   opacity: 50%;
+}
+
+.card-list:hover #comment {
+  opacity: 1;
 }
 
 .card-title {
