@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "../style.css";
 import ResultsPage from "./ResultsPage";
-
+import InputRange from 'react-input-range';
+import "react-input-range/lib/css/index.css";
 
 class CustomPlan extends Component {
     constructor(props) {
         super(props)
         this.state = {
             isDataSubmitted: false,
+            value: 0,
             userData: {
                 name: undefined,
                 ft: undefined,
@@ -16,7 +18,7 @@ class CustomPlan extends Component {
                 gender: "Do not wish to answer",
                 age: undefined,
                 physical: "Never",
-                money: undefined,
+                // money: 0,
                 nutr: undefined,
                 cuisine: undefined,
                 goal: undefined,
@@ -54,18 +56,17 @@ class CustomPlan extends Component {
             errors["age"] = "Enter age";
         }
 
-        //Nutrition - Fresh Foods and Vegetables
-        // if ((!input["Always"]) || (!input["Often"]) || (!input["Sometimes"])
-        //     || (!input["Not Often"]) || (!input["Never"])) {
-        //     formValidation = false;
-        //     errors["nutr"] = "Select an answer";
-        // }
+        //Nutrition
+        if (this.getSelectedCheckboxValues("nutr").length == 0) {
+            formValidation = false;
+            errors["nutr"] = "Select an answer";
+        }
 
-        // //Goal
-        // if (!input["goal"]) {
-        //     formValidation = false;
-        //     errors["goal"] = "Select an answer";
-        // }
+        //Goal
+        if (this.getSelectedCheckboxValues("goal").length == 0) {
+            formValidation = false;
+            errors["goal"] = "Select an answer";
+        }
 
         this.setState({ errors: errors });
         return formValidation;
@@ -82,6 +83,7 @@ class CustomPlan extends Component {
         let values = [];
         checkboxes.forEach((checkbox) => {
             values.push(checkbox.value);
+            console.log(checkbox.value)
         });
         return values;
     }
@@ -97,6 +99,7 @@ class CustomPlan extends Component {
         console.log('in submit')
         event.preventDefault()
         if (this.handleValidation()) {
+            console.log("validated")
             // let survey = document.getElementById("survey");
             // let result = document.getElementById("result");
             // survey.style.display = "none";
@@ -107,9 +110,12 @@ class CustomPlan extends Component {
             this.updateUserData("goal", this.getSelectedCheckboxValues("goal"))
 
             this.setState({ isDataSubmitted: true });
+        } else {
+            console.log("invalid")
         }
 
     }
+
     render() {
         //todo: conditionally render rest of components instead of hiding/showing display
         if (this.state.isDataSubmitted) {
@@ -152,7 +158,7 @@ class CustomPlan extends Component {
                                         value={this.state.userData.name}
                                         onChange={this.onFormChange}
                                     />
-                                    <span>{this.state.errors["name"]}</span>
+                                    <span className="error">{this.state.errors["name"]}</span>
                                 </div>
                             </div>
 
@@ -172,7 +178,7 @@ class CustomPlan extends Component {
                                                 value={this.state.userData.ft}
                                                 onChange={this.onFormChange}
                                             />
-                                            <span>{this.state.errors["ft"]}</span>
+                                            <span className="error">{this.state.errors["ft"]}</span>
                                         </div>
                                         <div className="form-group col-md-2">
                                             <input
@@ -207,7 +213,7 @@ class CustomPlan extends Component {
                                                 value={this.state.userData.lbs}
                                                 onChange={this.onFormChange}
                                             />
-                                            <span>{this.state.errors["lbs"]}</span>
+                                            <span className="error">{this.state.errors["lbs"]}</span>
                                         </div>
 
                                         {/* Age */}
@@ -222,7 +228,7 @@ class CustomPlan extends Component {
                                                 value={this.state.userData.age}
                                                 onChange={this.onFormChange}
                                             />
-                                            <span>{this.state.errors["age"]}</span>
+                                            <span className="error">{this.state.errors["age"]}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -269,7 +275,7 @@ class CustomPlan extends Component {
                             </div>
 
                             {/* Weekly Budget */}
-                            <div className="row mb-3">
+                            {/* <div className="row mb-3">
                                 <div className="form-group col-md-9">
                                     <label htmlFor="inputPhysical">What is your estimated weekly budget?</label>
                                     <input
@@ -282,6 +288,23 @@ class CustomPlan extends Component {
                                         value={this.state.userData.money}
                                         onChange={this.onFormChange}
                                     />
+                                </div>
+                            </div> */}
+
+                            <div className="row mb-3">
+                                <div className="form-group col-md-9">
+                                    <label htmlFor="inputPhysical">What is your estimated weekly budget?</label>
+                                    <div className="mt-3">
+                                        <InputRange
+                                            maxValue={100}
+                                            minValue={0}
+                                            id="money"
+                                            formatLabel={value => `$${value}`}
+                                            value={this.state.value}
+                                            onChange={value => this.setState({ value })}
+                                            onChangeComplete={value => console.log(value)}
+                                        />
+                                    </div>
                                 </div>
                             </div>
 
@@ -309,7 +332,7 @@ class CustomPlan extends Component {
                                         <input class="form-check-input" id="never" type="radio" name="nutr" value="Never" />
                                         <label class="form-check-label" for="never">Never</label>
                                     </div>
-                                    {/* <span>{this.state.errors["nutr"]}</span> */}
+                                    <span className="error">{this.state.errors["nutr"]}</span>
                                 </div>
                             </div>
 
@@ -392,7 +415,7 @@ class CustomPlan extends Component {
                                         <input class="form-check-input" id="none" type="radio" name="goal" value="Nothing specific" />
                                         <label class="form-check-label" for="none">Nothing specific</label>
                                     </div>
-                                    {/* <span>{this.state.errors["goal"]}</span> */}
+                                    {<span className="error">{this.state.errors["goal"]}</span>}
                                 </div>
                             </div>
                         </div>
@@ -401,7 +424,6 @@ class CustomPlan extends Component {
                 </form>
             );
         }
-
     }
 }
 

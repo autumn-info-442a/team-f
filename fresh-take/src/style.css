@@ -150,14 +150,17 @@ nav > p {
   cursor: pointer;
 }
 
-span {
+span.error {
   color: #d00000;
   font-size: .8rem;
 }
+
 /**************MEAL CARDS*******************/
 
-.resultNum {
-  font-weight: bold; 
+p span.resultNum {
+  font-weight: bold;
+  color:#2A7975;
+  font-size: 1.5rem;
 }
 
 .card.card-list {
@@ -286,7 +289,7 @@ span {
 
 /* Colors
 primary: #2A7975;
-secondar: #B2D8D1;
+secondary: #B2D8D1;
 object color: #E08F54;
 #F3DFC4
 #F4F4F4

@@ -128,25 +128,25 @@ class ResultsPage extends Component {
 
         <div className="row text-center">
           <div className="col">
-            <p className="resultNum">{this.calcCalories()} Calories / Day</p>
+            <p><span className="resultNum">{this.calcCalories()}</span>  Calories / Day</p>
           </div>
           <div className="col">
-            <p><span className="resultNum">{this.calcFruitVeg()}</span> Servings of Vegetables</p>
-          </div>
-        </div>
-
-        <div className="row text-center">
-          <div className="col">
-            <p className="resultNum">{this.calcFruitVeg()} Servings of Fruits</p>
-          </div>
-          <div className="col">
-            <p className="resultNum">{this.calcExercise()} Min of Exercise / Day</p>
+            <p><span className="resultNum">{this.calcFruitVeg()}</span>  Servings of Vegetables</p>
           </div>
         </div>
 
         <div className="row text-center">
           <div className="col">
-            <p className="resultNum">{this.calcWater()} Ounce of Water</p>
+            <p><span className="resultNum">{this.calcFruitVeg()}</span>  Servings of Fruits</p>
+          </div>
+          <div className="col">
+            <p><span className="resultNum">{this.calcExercise()}</span>  Min of Exercise / Day</p>
+          </div>
+        </div>
+
+        <div className="row text-center">
+          <div className="col">
+            <p><span className="resultNum">{this.calcWater()}</span>  Ounces of Water</p>
           </div>
           <div className="col">
           </div>
