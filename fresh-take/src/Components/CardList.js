@@ -9,7 +9,7 @@ class Card extends Component {
     return (
       <div className="card">
         <div className="card-list">
-        <a href={topic.link}>
+        <a href={topic.link} target="_blank">
         <img
           src={require("../img/" + pic + ".jpg")}
           className={"card-img-top"}
