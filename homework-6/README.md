@@ -171,7 +171,7 @@ ____
     - Justification: Manual testing again helps prevent the user/stakeholder from breaking the application by accessing future portions without entering required information.
 
 
-Budget:
+### Budget:
 15. `COMPLETE:` Slider must be dragged in increments of whole dollar numerical amounts.
 
 - Manual testing: When a user drags the slider button, an associated number marking the current slider location should be displayed near the slider button. The closest number to slide up or down is the next whole number, and should not display decimals or skip numbers.
