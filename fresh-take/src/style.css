@@ -177,14 +177,6 @@ p span.resultNum {
   display: none;
 }
 
-.card-list:hover {
-  opacity: 50%;
-}
-
-.card-list:hover #comment {
-  opacity: 1;
-}
-
 .card-title {
   color: #000000;
   text-align: center;
