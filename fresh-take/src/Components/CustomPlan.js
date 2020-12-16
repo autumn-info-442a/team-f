@@ -57,13 +57,13 @@ class CustomPlan extends Component {
         }
 
         //Nutrition
-        if (this.getSelectedCheckboxValues("nutr").length == 0) {
+        if (this.getSelectedCheckboxValues("nutr").length === 0) {
             formValidation = false;
             errors["nutr"] = "Select an answer";
         }
 
         //Goal
-        if (this.getSelectedCheckboxValues("goal").length == 0) {
+        if (this.getSelectedCheckboxValues("goal").length === 0) {
             formValidation = false;
             errors["goal"] = "Select an answer";
         }

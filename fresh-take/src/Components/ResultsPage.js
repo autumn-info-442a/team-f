@@ -3,10 +3,9 @@ import "../style.css";
 import CardList from "./CardList";
 
 class ResultsPage extends Component {
-  constructor(props) {
-    super(props)
-  }
-
+  // constructor(props) {
+  //   super(props)
+  // }
   calcCalories = () => {
     /* Calorie calculation based on Harris Benedict Formula, a calorie formula using the variables of height,
     weight, age, and gender to calculate basal metabolic rate (BMR). The BMR is multiplied by appropriate exercise factor.
@@ -31,7 +30,7 @@ class ResultsPage extends Component {
     }
 
     let inch = this.props.userData.in;
-    if (inch == undefined) {
+    if (inch === undefined) {
       inch = 0;
     }
 
@@ -82,7 +81,7 @@ class ResultsPage extends Component {
       } else if (age <= 13) {
         fruitVeg = 6;
       }
-    } else if (gender == "Do not wish to answer" || gender == "Male" || gender == "Non-binary") {
+    } else if (gender === "Do not wish to answer" || gender === "Male" || gender === "Non-binary") {
       if (age <= 18) {
         fruitVeg = 8;
       } else if (age <= 50) {
@@ -90,7 +89,7 @@ class ResultsPage extends Component {
       } else if (age >= 51) {
         fruitVeg = 7;
       }
-    } else if (gender == "Female") {
+    } else if (gender === "Female") {
       if (age <= 18) {
         fruitVeg = 7;
       } else if (age <= 50) {
@@ -112,9 +111,18 @@ class ResultsPage extends Component {
     return exercise;
   }
 
+  renderCusine = () => {
+    if (this.props.userData.cuisine.length !== 0) {
+      return this.props.userData.cuisine[0];
+    } else {
+      return "default";
+    }
+  }
 
   render() {
-    console.log(this.props.userData.goal, "goal");
+    console.log(this.props.userData);
+
+
     // calculate all the calories before returing 
     let userData = this.props.userData;
     return (
@@ -178,7 +186,7 @@ class ResultsPage extends Component {
           </div>
         </div>
 
-        <CardList cuisine={userData.cuisine[0]} />
+        <CardList cuisine={this.renderCusine()} />
 
       </div>
     );

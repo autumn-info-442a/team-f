@@ -31,6 +31,7 @@ class Comment extends Component {
             if (type.cuisine === this.props.cuisine) {
                 return <Card key={type.name} category={type} />;
             }
+            return null;
         });
 
         return <div className="card-deck">{newList}</div>;
